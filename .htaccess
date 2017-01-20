@@ -1,0 +1,3 @@
+Options -Indexes
+
+ErrorDocument 404 "Ooops, that page was <b>not found</b>. Please try a different one or <a href="mailto:owner@site.com">email the site owner</a> for assistance.
