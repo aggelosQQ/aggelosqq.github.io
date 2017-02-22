@@ -11,6 +11,8 @@ body {
 
 .page-brand {
   float: left;
+  -webkit-transform: translateX(-400px);
+  -ms-transform: translateX(-400px);
   transform: translateX(-400px); }
 
 nav.nav {
@@ -90,8 +92,14 @@ ul.navbar {
     margin-bottom: 0px; }
 
 .skills .skills-inner {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   padding: 15px; }
   .skills .skills-inner figure {
@@ -110,8 +118,14 @@ h1.section-title {
   margin-bottom: 25px; }
 
 .projects-list {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center; }
 
 a.project {
@@ -209,6 +223,8 @@ a.email {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   a.email:hover {
+    -webkit-transform: translateY(-5px) scale(1.1, 1.1);
+    -ms-transform: translateY(-5px) scale(1.1, 1.1);
     transform: translateY(-5px) scale(1.1, 1.1);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
   a.email:after {
@@ -242,24 +258,19 @@ a.email {
 @media only screen and (max-width: 768px) {
   .hide-on-mobile {
     display: none; }
-
   .show-on-mobile {
     display: block; }
-
   .menu {
     float: right;
     font-size: 2em; }
-
   nav a {
     display: block; }
-
   .navbar-visible {
     display: block;
     padding: 0;
     margin: 0;
     margin-top: 55px;
     width: 100%; }
-
   ul.navbar > li {
     padding: 10px;
     width: 100%;
@@ -268,12 +279,40 @@ a.email {
     ul.navbar > li a {
       padding: 0;
       margin: 0; }
-
   nav.nav ul.navbar > li a {
     margin: 0; }
-
   section {
     width: 99%;
     margin: 0 auto; } }
 
-/*# sourceMappingURL=main.css.map */
+.twitter-icon {
+  padding: 10px;
+  color: #326ada;
+  border: 2px solid #326ada;
+  border-radius: 100%;
+  z-index: 999;
+  widows: 29.719px;
+  height: 32px;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
+  .twitter-icon:hover {
+    background: #326ada;
+    color: #fff; }
+
+.facebook-icon {
+  padding: 10px;
+  color: #3b5998;
+  width: 29.719px;
+  height: 32px;
+  border: 2px solid #3b5998;
+  border-radius: 100%;
+  z-index: 999;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
+  .facebook-icon:hover {
+    background: #3b5998;
+    color: #fff; }

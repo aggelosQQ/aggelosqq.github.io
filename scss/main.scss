@@ -289,3 +289,37 @@ a.email {
 		margin: 0 auto;
 	}
 }
+
+
+.twitter-icon {
+	padding: 10px;
+	color: #326ada;
+	border: 2px solid #326ada;
+	border-radius: 100%;
+	z-index: 999;
+	widows: 29.719px;
+	height: 32px;
+	@include transition(all .4s ease-in-out);
+
+	&:hover {
+		background: #326ada;
+		color: #fff;
+	}
+}
+
+
+
+.facebook-icon {
+	padding: 10px;
+	color: 	#3b5998;
+	width: 29.719px;
+	height: 32px;
+	border: 2px solid #3b5998;
+	border-radius: 100%;
+	z-index: 999;
+	@include transition(all .4s ease-in-out);
+	&:hover {
+		background: #3b5998;
+		color: #fff;
+	}
+}
