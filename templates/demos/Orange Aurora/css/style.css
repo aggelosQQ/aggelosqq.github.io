@@ -1,0 +1,166 @@
+body {
+    margin-bottom: 180px;
+    overflow-x: hidden;
+    background-color: #111;
+    color: #ccc;
+    font-family: Tahoma, Verdana, Arial;
+}
+
+.navbar .navbar-inverse {
+    background-color: #f15a22;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: #d97020;
+    margin-top: -30px;
+    color: #7FFFD4;
+}
+
+.blog {
+    color: #ccc;
+    padding: 5px;
+}
+
+#part-header {
+    text-decoration: underline;
+    color: #ff6200;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-bottom: 25px;
+}
+
+.blog-inner {
+    text-align: center;
+    background-color: #fe5006;
+    margin-top: -3.5px;
+    border-top: 1px solid #f15a22;
+}
+
+.blog-inner a {
+    color: #222;
+}
+
+.blog-inner a:hover {
+    color: #000;
+}
+
+.article-footer {
+    text-align: right;
+}
+
+a {
+    color: #d97020;
+}
+
+a:hover,
+a:focus {
+    color: #f15a22;
+}
+
+.vote {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.vote ul {
+    background: #333;
+    text-align: center;
+}
+
+.vote li {
+    margin-left: -30px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.navbar-inverse {
+    background-color: #f15a22;
+    border: hidden;
+}
+
+hr {
+    width: 100%;
+}
+
+.feature {
+    text-align: center;
+    background-color: #d97020;
+    -webkit-border-radius: 150px 150px 150px 150px;
+    border-radius: 150px 150px 150px 150px;
+    margin-bottom: 50px;
+    height: 200px;
+    padding: 25px;
+}
+
+.icon {
+    background-color: orange;
+    -webkit-border-radius: 150px 150px 150px 150px;
+    border-radius: 150px 150px 150px 150px;
+    margin-bottom: 5px;
+    padding: 15px;
+}
+
+.server-ip {
+    background-color: #ff6700;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid #222;
+    -webkit-border-radius: 150px 150px 150px 150px;
+    border-radius: 150px 150px 150px 150px;
+}
+
+#server_status {
+    font-size: 1.5em;
+}
+
+.status-part {
+    height: auto;
+    text-align: center;
+    padding: 5px;
+}
+
+#online {
+    color: lime;
+    font-size: 1.5em;
+}
+
+#offline {
+    color: #B22222;
+    font-size: 1.5em;
+}
+
+#player_status {
+    font-size: 1.5em;
+    color: #ff6602;
+}
+
+#server_players {
+    font-size: 1.4em;
+}
+
+.staff img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.navbar-inverse .navbar-nav>li>a,
+.navbar-inverse .navbar-brand {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-brand:hover,
+.footer a {
+    color: #ccc;
+}
+
+.template-author {
+    text-align: center;
+    font-size: .7em;
+    margin-top: 50px;
+}

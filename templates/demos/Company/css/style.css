@@ -1,0 +1,201 @@
+.icon-bar {
+    color: #555;
+}
+
+::-moz-selection {
+    color: #555;
+    background-color: #ccc;
+}
+
+::selection {
+    color: #555;
+    background-color: #ccc;
+}
+
+body {
+    background-color: whitesmoke;
+    margin-bottom: -100px;
+    overflow-x: hidden;
+}
+
+.jumbotron {
+    background: #06bdf7 url("http://cdn.wonderfulengineering.com/wp-content/uploads/2016/01/cool-wallpaper-12.jpg") no-repeat center fixed;
+    color: #fff;
+    text-shadow: 1px 1px 3px #000;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: -20px;
+    margin-bottom: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-select: text;
+    -webkit-user-select: all;
+    -ms-user-select: none;
+}
+
+.navbar-default {
+    background-color: #0687ef;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+    color: skyblue;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-text {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: #0bc4c8;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: papayawhip;
+    background-color: #0687ef;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff
+}
+
+.features {
+    background-color: #0687ef;
+    padding: 5px;
+}
+
+.price-part {
+    background-color: #222;
+    width: 100%;
+    color: #ccc;
+    padding: 15px;
+}
+
+#item-price {
+    font-size: 2em;
+}
+
+.features .text-muted {
+    color: #fff;
+}
+
+.features .page-header {
+    color: #444;
+}
+
+.testimonials {
+    background: royalblue;
+    height: 50vh;
+    padding: 50px;
+}
+
+.page-header {
+    margin-bottom: 50px;
+}
+
+.footer .navbar-default {
+    background-color: #555;
+    color: #ccc;
+    padding-bottom: 30px;
+}
+
+.footer h3 {
+    color: #ccc;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 1.2em;
+    margin-bottom: 1px;
+    text-decoration: underline;
+}
+
+.footer a {
+    color: #999;
+}
+
+.footer .social a {
+    color: paleturquoise;
+    opacity: 0.5;
+    margin-left: 10px;
+}
+
+.footer .social a:hover,
+.footer .social a:focus {
+    opacity: 1;
+}
+
+.item {
+    color: bisque;
+}
+
+.item .text-muted {
+    color: #ccc;
+    margin-left: 100px;
+}
+
+.item footer {
+    color: #ccc;
+}
+
+.features-list {
+    background-color: #d8f3f0;
+    padding: 50px;
+    color: #555;
+}
+
+.features-list .page-header {
+    margin-top: -20px;
+}
+
+.features-list #feature-icon {
+    color: #555;
+}
+
+.about-us {
+    background-color: skyblue;
+    color: #fff;
+}
+
+.about-us a {
+    border: 1px dotted black;
+}
+
+.about-us a:hover {
+    border: 1px dashed black;
+}
+
+.jumbotron img {
+    margin-top: 150px;
+    user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}

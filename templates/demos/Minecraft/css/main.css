@@ -1,0 +1,60 @@
+* { margin:0;padding:0;}
+body {
+      font-family: 'Baloo Paaji', cursive;
+}
+.cover-1 {
+   background: url('../images/obsidian.png') no-repeat fixed center;
+   background-size: cover;
+}
+.cover-1 h1, .cover-1 p {
+   padding-right: 250px;
+   color: rgba(220,100,0,0.9);
+   text-align: center;
+   font-family: 'Baloo Paaji', cursive;
+}
+#fullpage {
+   background: rgba(0,0,0,0.5);
+}
+#status {
+   font-size: 2em;
+   margin-top:20px;
+}
+.cover-2 {
+   background: url('../images/blue.png') no-repeat fixed;
+   background-size: cover;
+}
+.cover-2 p {
+   width: 50%;
+   margin: 0 auto;
+}
+.cover-2 h1 {
+   text-align: center;
+}
+.cover-3 {
+   background: url('../images/sword.png') no-repeat fixed;
+   background-size: cover;
+}
+.cover-3 h1, .cover-3 p {
+   padding-left: 10%;
+}
+.cover-3 p {
+   margin-top: -20px;
+   font-size: 1.3em;
+   margin-bottom: 20px;
+}
+.cover-3 .btn {
+   margin-left: 10%;
+   display: block;
+   margin-bottom: 10px;
+   width: 35%;
+}
+.footer-copyright {
+   background: rgba(0,0,0,0.2);
+   padding: 10px;
+   width: 50%;
+   margin: 20% auto 0;
+   text-shadow: 0 0 10px #999;
+}
+.footer-copyright a {
+   color: #666;
+}

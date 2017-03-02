@@ -1,0 +1,49 @@
+body {
+	background: #fff;
+	display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.template {
+	text-align: center;
+	background: #79464e;
+	border-radius: 4px;
+	padding: 10px 10px 30px 10px;
+	color: #ccc;
+	box-shadow: 1px 10px 15px #222;
+	margin-bottom: 15px;
+}
+.template button{
+	margin-bottom: 5px;
+}
+.template .card-content {
+	background: #79464e;
+	box-shadow: 0 0 0;
+	}
+.virus-total {
+	margin-top: 40px;
+	text-align: center;
+	color: #222;
+	margin-left: auto;
+	margin-right: auto;
+}
+.virus-total a {
+	color: #222;
+}
+nav {
+	margin-bottom: 60px;
+}
+footer {
+    flex: 1 0 auto;
+  }
+.social-icon {
+  	color: #fff;
+  	padding: 10px;
+  	border-radius: 150px;
+  	-webkit-border-radius: 150px;
+  	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+  }
