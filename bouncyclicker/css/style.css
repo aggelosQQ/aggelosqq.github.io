@@ -1,0 +1,164 @@
+::selection {
+    background: #999;
+    color: #eee
+}
+
+body,
+html {
+    margin: 0;
+    /* background: url("http://coolchaser-static.coolchaser.com/images/themes/t/-i641.photobucket.com-albums-uu136-lllisalllindsay-stars2-988902q0nc275lrl.gif") no-repeat center fixed; */
+    background: #222;
+    background-size: cover;
+    color: #ccc;
+    font-family: 'Dosis', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#header {
+    font-family: 'Chewy', cursive;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.score {
+    margin-top: 10%;
+    padding: 15px;
+    text-align: center;
+    background-color: #222;
+    border: 1px dashed #333;
+}
+
+.score h3 {
+    text-decoration: underline;
+    font-family: 'Oswald', sans-serif;
+}
+
+.ball {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 500px;
+    padding-bottom: 0;
+    border-radius: 100%;
+}
+
+.ball img {
+    border-radius: 150px;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+}
+h3#shop-nav {
+    text-transform: uppercase;
+    font-weight: 600;
+    opacity: 0.3;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+h3#shop-nav:hover {
+    opacity: 1;
+}
+
+h3#shop-nav a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.game-page {
+    height: 100vh;
+}
+
+.shop-page {
+    height: 100vh;
+    background-color: #222;
+}
+
+.shop-page #header {
+    margin-bottom: 150px;
+}
+
+.social {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social a {
+    color: #999;
+    margin-left: 10px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.social a:hover {
+    color: #ccc;
+}
+
+.shop-page hr {
+    width: 15%;
+}
+#refresh {
+    cursor: pointer;
+}
+.level-style {
+    font-size: 2.3em;
+    text-align: right;
+    margin-right: 30px;
+}
+.modal {
+    color: #222;
+}
+.how-to-play {
+    margin-top: 3%;
+    margin-left: 1%;
+}
+.modal-header, .modal-header h4  {
+    font-size: 1.3em;
+    text-align: center;
+    background: #333;
+    color: #ccc;
+}
+.close {
+    color: #ccc;
+}
+.modal-body {
+    background: #444;
+    color: #ccc;
+}
+.modal-footer {
+    background: #555;
+}
+.close-button {
+    background: #666;
+    color: #ccc;
+    border: 1px solid #444;
+}
+.close-button:hover {
+    background: #555;
+    color: #ccc;
+    border: 1px solid #333;
+}
+.open-button {
+    background: #555;
+    color: #ccc;
+    border: 1px solid #111;
+}
+.open-button:hover, .open-button:focus {
+    background: #666;
+    color: #ccc;
+    border: 1px solid #222;
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bouncy Clicker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Dosis:500' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <link rel="shortcut icon" type="image/png" href="images/mouse.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="game-page">
+
+  
+
+        <div class="row">
+            <div class="container-fluid">
+                <div class="col-md-12 animated fadeInLeft">
+                    <h1 id="header">Bouncy Clicker!</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 animated fadeInLeft" data-wow-delay="5s">
+                <div class="score">
+                 <button type="button" class="btn btn-default open-button how-to-play" data-toggle="modal" data-target="#HtP">How to Play</button>
+                    <h3 class="animated fadeInDown" data-wow-delay="5s">Score</h3>
+                    <p class="animated fadeInLeft" data-wow-delay="5s">Current Score: <strong><span id="curr-score">0</span></strong>
+
+                        <p class="animated bounceInLeft" data-wow-delay="2s">Coins: <strong><span id="coins">15</span></strong></p>
+                        <hr/>
+                        <span id="refresh">Refresh</span>
+
+                </div>
+
+            </div>
+            </div>
+               
+
+  <!-- Modal -->
+  <div class="modal fade" id="HtP" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">How to Play</h4>
+        </div>
+        <div class="modal-body">
+          <p><strong>First of all, thank you for trying out the game.</strong><br/>Well, what you are supposed to do in this game is click, click and click trying to reach the highest level.<br/><strong>However</strong>, everytime you pass 10 levels, the ball changes! <strong>Click to find out!</strong></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default close-button" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+        <p class="animated bounceInLeft level-style" data-wow-delay="2s">Level: <strong><span id="level">1</span></strong></p>
+        <div class="game">
+            <div class="container">
+                <div class="ball">
+                    <img src="images/click.png" class="img-responsive" id="click"></div>
+            </div>
+        </div>
+        <div class="shop-nav-part">
+            <h3 id="shop-nav" class="text-center"><a href="#shop" id="shop-nav-link">Shop </a><i class="caret"></i></h3>
+        </div>
+    </div>
+    <div class="shop-page animated fadeInRight">
+
+        <a id="shop" name="shop"></a>
+        <h1 id="header">Bouncy Shop</h1>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <i class="fa fa-hand-pointer fa-1x"></i><i class="fa fa-plus fa-1x"></i>
+                    <br/><strong>Auto Clicker</strong>
+                    <div class="text-muted">Clicks automatically. The higher level, the more clicks.</div>
+                    <br/>
+                    <button type="button" class="btn btn-danger disabled">Purchase (100C)</button>
+                </div>
+                <div class="hidden-lg">
+                    <br/>
+                </div>
+                <div class="col-md-3">
+                    <i class="fa fa-expand fa-1x"></i>
+                    <br/><strong>Increase CpC</strong>
+                    <div class="text-muted">Instead of that regular one coin, you will be given one more per click!</div>
+                    <br/>
+                    <button type="button" class="btn btn-danger disabled">Purchase (25C)</button>
+                </div>
+                <div class="hidden-lg">
+                    <br/>
+                </div>
+                <div class="col-md-3">
+                    <i class="fa fa-arrow-up fa-1x"></i><i class="fa fa-exclamation fa-1x"></i>
+                    <br/><strong>Force Level Up</strong>
+                    <div class="text-muted">Are you lazy? Purchase this to increase your level by 1 (one)!</div>
+                    <br/>
+                    <button type="button" class="btn btn-danger disabled">Purchase 1 (150C)</button>
+                </div>
+                <div class="hidden-lg">
+                    <br/>
+                </div>
+                <div class="col-md-3 contact">
+                    <i class="fa fa-question fa-1x"></i>
+                    <br/><strong>Open for Suggestions</strong>
+                    <div class="text-muted">Send me a message to suggest power-ups!</div>
+                    <br/>
+
+                    <div id="SkypeButton_Call_maloukos2_1">
+                        <script type="text/javascript">
+                            Skype.ui({
+                                "name": "chat",
+                                "element": "SkypeButton_Call_maloukos2_1",
+                                "participants": ["maloukos2"],
+                                "imageSize": 24
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div class="footer">
+            <div class="social text-center">
+                <h4 class="footer">Aggelos Game Productions &copy; 2015 - 2016. All Rights Reserved.</h4>
+                <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20small%20game%2C%20it%27s%20quite%20funny%21%0D%0Aimmafreedom.eu%2Fgame&source=clicktotweet&related=clicktotweet"><i class="fa fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+                <a href="#"><i class="fa fa-youtube fa-2x"></i></a>
+                <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                <h4><i class="fa fa-gamepad fa-1x"></i> Next Game: <a href="https://unraveledmc.com/game">Minecraft Clicker</a></h4>
+            </div>
+        </div>
+    </div>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

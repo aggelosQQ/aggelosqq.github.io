@@ -1,0 +1,70 @@
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#clicktostart {
+    padding: 5px;
+}
+
+img {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+}
+
+body {
+    margin-bottom: 160px;
+    background-color: whitesmoke;
+}
+
+#refresh {
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #fff;
+    border-top: 1px solid #555;
+    opacity: 1;
+}
+
+.footer h4 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 18px;
+}
+
+.shop {
+    margin-top: 150px;
+}
+
+.gameresults {
+    margin-bottom: -20px;
+}
+
+.contact {
+    font-weight: 600;
+}
+
+.changelog-show {
+    cursor: pointer;
+}
+
+.changelog {
+    text-align: left;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.social li {
+    display: inline-block;
+    margin-top: 5%;
+}
+ul {
+    list-style: none;
+}

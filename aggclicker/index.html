@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Aggelos Clicker</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/game.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="shortcut icon" type="image/png" href="images/mouse.png" />
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Aggelos Clicker</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right text-center">
+                    <li><a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20small%20game%2C%20it%27s%20quite%20funny%21%0D%0Aimmafreedom.eu%2Fgame&source=clicktotweet&related=clicktotweet"><i class="fa fa-twitter fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div class="container text-center">
+        <h1 class="page-header" id="clicktostart">Click the image to start!</h1>
+        <img src="images/click.png" class="img-responsive img-circled center" id="click">
+        <div class="gameresults">
+
+            <p id="clicktimes"></p>
+
+            <p id="result"></p>
+
+            <p id="coins"></p>
+
+            <p id="refresh" title="Are you sure?">Restart</p>
+        </div>
+        <br/>
+        <div class="shop">
+            <h1 class="page-header">Shop</h1><span class="label label-info">Work is in Progress</span>
+            <br/>
+            <div class="row">
+                <div class="col-md-3">
+                    <i class="fa fa-hand-pointer-o fa-1x"></i><i class="fa fa-plus fa-1x"></i>
+                    <br/><strong>Auto Clicker</strong>
+                    <div class="text-muted">Clicks automatically. The higher level, the more clicks.</div>
+                    <br/>
+                    <button type="button" class="btn btn-danger disabled">Purchase (100C)</button>
+                </div>
+                <div class="hidden-lg">
+                    <br/>
+                </div>
+                <div class="col-md-3">
+                    <i class="fa fa-expand fa-1x"></i>
+                    <br/><strong>Increase CpC</strong>
+                    <div class="text-muted">Instead of that regular one coin, you will be given one more per click!</div>
+                    <br/>
+                    <button type="button" class="btn btn-danger disabled">Purchase (25C)</button>
+                </div>
+                <div class="hidden-lg">
+                    <br/>
+                </div>
+                <div class="col-md-3">
+                    <i class="fa fa-arrow-up fa-1x"></i><i class="fa fa-exclamation fa-1x"></i>
+                    <br/><strong>Force Level Up</strong>
+                    <div class="text-muted">Are you lazy? Purchase this to increase your level by 1 (one)!</div>
+                    <br/>
+                    <button type="button" class="btn btn-danger disabled">Purchase 1 (150C)</button>
+                </div>
+                <div class="hidden-lg">
+                    <br/>
+                </div>
+                <div class="col-md-3 contact">
+                    <i class="fa fa-question fa-1x"></i>
+                    <br/><strong>Open for Suggestions</strong>
+                    <div class="text-muted">Send me a message to suggest power-ups!</div>
+                    <br/>
+
+                    <div id="SkypeButton_Call_maloukos2_1">
+                        <script type="text/javascript">
+                            Skype.ui({
+                                "name": "chat",
+                                "element": "SkypeButton_Call_maloukos2_1",
+                                "participants": ["maloukos2"],
+                                "imageSize": 24
+                            });
+                        </script>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <h1 class="page-header">Changelog</h1>
+        <h4 data-toggle="collapse" data-target="#changelog-one" class="changelog-show"><strong>Changelog</strong> <span class="text-muted">11/8/2016</span> <span class="badge">V 2.2</span> <span class="caret"></span></h4>
+        <div class="changelog">
+            <div id="changelog-one" class="collapse">
+                <p><span class="label label-success">+</span> Added more levels! (Up to 15)</p>
+                <p><span class="label label-warning">*</span> Enhanced the code (should load faster!)</p>
+                <p><span class="label label-success">+</span> New link: https://unraveledmc.com/aggclicker</p>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="navbar navbar-fixed-bottom footer container">
+
+        <h4 style="float: left;">Aggelos Clicker 2.2 &copy; 2015 - 2016. All Rights Reserved.</h4>
+        <div class="social" style="float: right;">
+            <ul>
+                <li>
+                    <div class="fb-share-button" data-href="http://imafreedom.eu" data-layout="button_count"></div>
+                </li>
+                <li>
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check out this quite cool clicker game to kill your time!" data-size="small">Tweet</a>
+                    <script>
+                        ! function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0],
+                                p = /^http:/.test(d.location) ? 'http' : 'https';
+                            if (!d.getElementById(id)) {
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = p + '://platform.twitter.com/widgets.js';
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }
+                        }(document, 'script', 'twitter-wjs');
+                    </script>
+                </li>
+                <li>
+                    <div class="g-plus" data-action="share" data-annotation="bubble" data-href="http://immafreedom.eu/game"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
