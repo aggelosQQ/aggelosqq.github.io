@@ -13,7 +13,8 @@ body {
   float: left;
   -webkit-transform: translateX(-400px);
   -ms-transform: translateX(-400px);
-  transform: translateX(-400px); }
+  transform: translateX(-400px);
+  font-weight: 500; }
 
 nav.nav {
   padding: 25px; }
@@ -25,7 +26,8 @@ nav.nav {
       font-size: 1em;
       margin-left: 15px;
       padding: 10px 15px;
-      position: relative; }
+      position: relative;
+      font-weight: 500; }
 
 a#special {
   background: #009688;
@@ -74,10 +76,11 @@ ul.navbar {
     border: 3px solid #ccc; }
   .profile .name {
     margin-top: 15px;
-    font-size: 2em; }
+    font-size: 2em;
+    font-weight: 500; }
   .profile .subtitle {
     font-size: 1em;
-    font-weight: 100;
+    font-weight: 400;
     text-transform: uppercase;
     margin-top: 5px;
     letter-spacing: 0.1em; }
@@ -106,7 +109,8 @@ ul.navbar {
     padding: 25px;
     margin: 0 25px 25px 25px; }
     .skills .skills-inner figure h2 {
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      font-weight: 300; }
 
 svg {
   width: 150px; }
@@ -114,8 +118,10 @@ svg {
 li {
   list-style: none; }
 
-h1.section-title {
-  margin-bottom: 25px; }
+h1.section-title, h2.section-title {
+  margin-bottom: 25px;
+  font-weight: 300;
+  letter-spacing: 1px; }
 
 .projects-list {
   display: -webkit-flex;
@@ -212,9 +218,8 @@ input[type=submit]:after {
   text-align: center; }
 
 a.email {
-  text-align: left;
   display: inline-block;
-  padding: 10px 30px 10px 10px;
+  padding: 10px;
   background: #009688;
   color: #fff;
   position: relative;
@@ -223,31 +228,38 @@ a.email {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   a.email:hover {
-    -webkit-transform: translateY(-5px) scale(1.1, 1.1);
-    -ms-transform: translateY(-5px) scale(1.1, 1.1);
-    transform: translateY(-5px) scale(1.1, 1.1);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    padding-right: 40px; }
   a.email:after {
     font-family: FontAwesome;
     content: '\f003';
     position: absolute;
-    right: -15px;
+    top: -15px;
     opacity: 0;
-    -moz-transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    padding-left: 15px;
+    -moz-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    padding-left: 10px;
     color: #fff;
     font-size: 1.3em; }
   a.email:hover:after {
     opacity: 1;
-    right: 5px; }
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
 
 .footer {
   text-align: center;
   padding: 25px;
   margin-top: 85px; }
+
+.hire h1.title {
+  letter-spacing: 1px;
+  font-weight: 300;
+  margin-bottom: 5px;
+  display: inline-block; }
 
 .hide-on-mobile {
   display: block; }

@@ -23,6 +23,7 @@ body {
 .page-brand {
 	float: left;
 	transform: translateX(-400px);
+	font-weight: 500;
 }
 
 
@@ -37,6 +38,7 @@ nav.nav {
 			margin-left: 15px;
 			padding:10px 15px;
 			position: relative;
+			font-weight: 500;
 		}
 	}
 }
@@ -84,10 +86,11 @@ ul.navbar {
 	.name {
 		margin-top:15px;
 		font-size: 2em;
+		font-weight: 500;
 	}
 	.subtitle {
 		font-size: 1em;
-		font-weight: 100;
+		font-weight: 400;
 		text-transform: uppercase;
 		margin-top:5px;
 		letter-spacing: 0.1em;
@@ -116,6 +119,7 @@ ul.navbar {
 			margin: 0 25px 25px 25px;
 			h2 {
 				margin-bottom:5px;
+				font-weight: 300;
 			}
 		}
 	}
@@ -130,8 +134,10 @@ li {
 	list-style: none;
 }
 
-h1.section-title {
+h1.section-title, h2.section-title {
 	margin-bottom:25px;
+	font-weight: 300;
+	letter-spacing: 1px;
 }
 
 .projects-list {
@@ -220,31 +226,31 @@ input[type=submit]:after {
 }
 .hire { text-align: center; }
 a.email {
-	text-align: left;
 	display: inline-block;
-	padding: 10px 30px 10px 10px;
+	padding: 10px;
 	background: $teal;
 	color: $white;
 	position: relative;
 	@include transition(all .3s ease);
 	&:hover {
-		transform: translateY(-5px) scale(1.1, 1.1);
 		box-shadow: 0 5px 15px fade-out($black, .5);
+		padding-right:40px;
 	}
 	&:after {
 		font-family: FontAwesome;
 		content: '\f003';
 		position: absolute;
-		right: -15px;
+		top: -15px;
 		opacity: 0;
-		@include transition(all .3s ease);
-		padding-left:15px;
+		@include transition(all .4s ease);
+		padding-left: 10px;
 		color: $white;
 		font-size: 1.3em;
 	}
 	&:hover:after {
 		opacity: 1;
-		right: 5px;
+		top: 50%;
+		transform: translateY(-50%);
 	}
 }
 .footer {
@@ -252,6 +258,16 @@ a.email {
 	padding:25px;
 	margin-top:85px;
 }
+
+
+.hire h1.title {
+	letter-spacing: 1px;
+	font-weight: 300;
+	margin-bottom: 5px;
+	display: inline-block;
+}
+
+
 .hide-on-mobile { display: block; }
 .show-on-mobile { display: none; }
 @media only screen and (max-width: 768px) {
