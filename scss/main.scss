@@ -309,8 +309,8 @@ a.email {
 
 .twitter-icon {
 	padding: 10px;
-	color: #326ada;
-	border: 2px solid #326ada;
+	color: #00aced;
+	border: 2px solid #00aced;
 	border-radius: 100%;
 	z-index: 999;
 	widows: 29.719px;
@@ -318,7 +318,7 @@ a.email {
 	@include transition(all .4s ease-in-out);
 
 	&:hover {
-		background: #326ada;
+		background: #00aced;
 		color: #fff;
 	}
 }
