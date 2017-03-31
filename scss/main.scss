@@ -138,6 +138,7 @@ h1.section-title, h2.section-title {
 	margin-bottom:25px;
 	font-weight: 300;
 	letter-spacing: 1px;
+	position: relative;
 }
 
 .projects-list {
@@ -265,6 +266,40 @@ a.email {
 	font-weight: 300;
 	margin-bottom: 5px;
 	display: inline-block;
+}
+
+
+.thumbnail-image {
+	width: 200px;
+	height: 200px;
+}
+
+.help {
+	font-size: .7em;
+	position: absolute;
+	border: 2px solid #000;
+	border-radius: 100%;
+	@include transition(0.3s all ease-in-out);
+	cursor: pointer;
+	margin-left: 5px;
+	&:hover {
+		color: #fff;
+		background:#000;
+	}
+	&:hover:after {
+		content: 'Click to Enlarge Images';
+		position: absolute;
+		color: #000;
+		margin-left: 50px;
+		bottom: 10px;
+		left: 0;
+		font-family: 'Raleway', sans-serif;
+		font-size: 0.8em;
+		background: #000;
+		color: #fff;
+		@include transition(0.3s all ease-in-out);
+		padding: 15px;
+	}
 }
 
 

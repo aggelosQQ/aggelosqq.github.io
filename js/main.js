@@ -13,4 +13,7 @@ $(document).ready(function() {
             scrollTop: $(".projects").offset().top
         }, 1000);
     });
+
+
+
 });
