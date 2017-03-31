@@ -268,80 +268,6 @@ a.email {
 	display: inline-block;
 }
 
-
-.thumbnail-image {
-	width: 200px;
-	height: 200px;
-}
-
-.help {
-	font-size: .7em;
-	position: absolute;
-	border: 2px solid #000;
-	border-radius: 100%;
-	@include transition(0.3s all ease-in-out);
-	cursor: pointer;
-	margin-left: 5px;
-	&:hover {
-		color: #fff;
-		background:#000;
-	}
-	&:hover:after {
-		content: 'Click to Enlarge Images';
-		position: absolute;
-		color: #000;
-		margin-left: 50px;
-		bottom: 10px;
-		left: 0;
-		font-family: 'Raleway', sans-serif;
-		font-size: 0.8em;
-		background: #000;
-		color: #fff;
-		@include transition(0.3s all ease-in-out);
-		padding: 15px;
-	}
-}
-
-
-.hide-on-mobile { display: block; }
-.show-on-mobile { display: none; }
-@media only screen and (max-width: 768px) {
-	.hide-on-mobile { display: none; }
-	.show-on-mobile { display: block; }
-
-	.menu {
-		float: right;
-		font-size:2em;
-	}
-	nav a { display: block; }
-	.navbar-visible {
-		display: block;
-		padding: 0;
-		margin: 0;
-		margin-top:55px;
-		width: 100%;
-	}
-	ul.navbar > li {
-		padding:10px;
-		width: 100%;
-		text-align: left;
-		background: $darker_white;
-		a {
-			padding: 0;
-			margin: 0;
-		}
-	}
-	nav.nav ul.navbar > li a {
-		margin: 0;
-	}
-
-	section {
-		width: 99%;
-		margin: 0 auto;
-	}
-}
-
-
 .twitter-icon {
 	padding: 10px;
 	color: #00aced;
@@ -374,3 +300,89 @@ a.email {
 		color: #fff;
 	}
 }
+
+.thumbnail-image {
+	width: 200px;
+	height: 200px;
+}
+
+.help {
+	font-size: .5em;
+	position: absolute;
+	border: 2px solid #000;
+	border-radius: 100%;
+	@include transition(0.3s all ease-in-out);
+	cursor: pointer;
+	margin-left: 5px;
+	&:hover {
+		color: #fff;
+		background:#000;
+	}
+	&:hover:after {
+		content: 'Click to Enlarge';
+		position: absolute;
+		color: #000;
+		margin-left: 40px;
+		bottom: 10px;
+		left: 0;
+		font-family: 'Raleway', sans-serif;
+		font-size: 0.8em;
+		background: #000;
+		color: #fff;
+		@include transition(0.3s all ease-in-out);
+		padding: 15px 40px;
+	}
+}
+
+
+.hide-on-mobile { display: block; }
+.hide-on-mobile-inline { display: inline-block; }
+.show-on-mobile { display: none; }
+@media only screen and (max-width: 768px) {
+	.hide-on-mobile { display: none; }
+	.hide-on-mobile-inline { display: none; }
+	.show-on-mobile { display: block; }
+
+	.menu {
+		float: right;
+		font-size:2em;
+	}
+	nav a { display: block; }
+	.navbar-visible {
+		display: block;
+		padding: 0;
+		margin: 0;
+		margin-top:55px;
+		width: 100%;
+	}
+	ul.navbar > li {
+		padding: 0;
+		width: 100%;
+		text-align: left;
+		background: $darker_white;
+		a {
+			padding: 0;
+			margin: 0;
+
+		}
+	}
+	nav.nav ul.navbar > li a {
+		margin: 0;
+	}
+	
+	section {
+		width: 99%;
+		margin: 0 auto;
+	}
+
+	.special {
+		
+	}
+
+	.thumbnail-image {
+		width: 100%;
+		height: 300px;
+		margin: 5px 0;
+	}
+}
+
