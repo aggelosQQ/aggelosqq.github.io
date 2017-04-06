@@ -304,6 +304,13 @@ a.email {
 .thumbnail-image {
 	width: 200px;
 	height: 200px;
+	@include transition(0.3s all ease-in-out);
+
+	&:hover {
+		transform: scale(1.1,1.1);
+		box-shadow: 0 0 15px #000;
+		margin: 0 -10px;
+	}
 }
 
 .help {
