@@ -96,9 +96,13 @@ a.email:hover:after { opacity: 1; top: 50%; -webkit-transform: translateY(-50%);
 
 .facebook-icon:hover { background: #3b5998; color: #fff; }
 
+.instagram-icon { padding: 10px; color: #D92E7F; width: 29.719px; height: 32px; border: 2px solid #D92E7F; border-radius: 100%; z-index: 999; -moz-transition: all 0.4s ease-in-out; -webkit-transition: all 0.4s ease-in-out; -o-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; }
+
+.instagram-icon:hover { background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF); color: #eee; border: none; }
+
 .thumbnail-image { width: 200px; height: 200px; -moz-transition: 0.3s all ease-in-out; -webkit-transition: 0.3s all ease-in-out; -o-transition: 0.3s all ease-in-out; transition: 0.3s all ease-in-out; }
 
-.thumbnail-image:hover { -webkit-transform: scale(1.1, 1.1); -ms-transform: scale(1.1, 1.1); transform: scale(1.1, 1.1); box-shadow: 0 0 15px #000; margin: 0 -10px; }
+.thumbnail-image:hover { -webkit-transform: scale(1.1, 1.1); -ms-transform: scale(1.1, 1.1); transform: scale(1.1, 1.1); box-shadow: 0 0 15px rgba(51, 51, 51, 0.8); margin: 0 -10px; }
 
 .help { font-size: .5em; position: absolute; border: 2px solid #000; border-radius: 100%; -moz-transition: 0.3s all ease-in-out; -webkit-transition: 0.3s all ease-in-out; -o-transition: 0.3s all ease-in-out; transition: 0.3s all ease-in-out; cursor: pointer; margin-left: 5px; }
 

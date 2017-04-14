@@ -1,4 +1,6 @@
 @import 'mixins';
+$size: 50vmin;
+$blur: .15*$size;
 $link_color: #222;
 $black: #000;
 $black_lighter: #444;
@@ -301,6 +303,24 @@ a.email {
 	}
 }
 
+
+.instagram-icon {
+	padding: 10px;
+	color: 	#D92E7F;
+	width: 29.719px;
+	height: 32px;
+	border: 2px solid #D92E7F;
+	border-radius: 100%;
+	z-index: 999;
+	@include transition(all .4s ease-in-out);
+	&:hover {
+		background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+		color: #eee;
+		border: none;
+	}
+}
+
+
 .thumbnail-image {
 	width: 200px;
 	height: 200px;
@@ -308,7 +328,7 @@ a.email {
 
 	&:hover {
 		transform: scale(1.1,1.1);
-		box-shadow: 0 0 15px #000;
+		box-shadow: 0 0 15px rgba(#333,.8);
 		margin: 0 -10px;
 	}
 }
