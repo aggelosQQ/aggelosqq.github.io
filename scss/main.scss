@@ -329,8 +329,13 @@ a.email {
 	&:hover {
 		transform: scale(1.1,1.1);
 		box-shadow: 0 0 15px rgba(#333,.8);
-		margin: 0 -10px;
+		border: 1px solid white;
 	}
+}
+
+.instagram-check {
+	margin-top: 40px;
+
 }
 
 .help {
