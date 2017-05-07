@@ -54,6 +54,7 @@ a#special:before {
 	left: 0;
 	height: 39px;
 	width: 0;
+	transform: none;
 	background: rgba($white, 0.3);
 	@include transition(all .3s ease);
 }
@@ -63,10 +64,11 @@ a#special:hover:before, a#special:active:before {
 nav.nav ul.navbar > li a:before {
 	content: "";
 	width: 0px;
-	height:3px;
+	height:2px;
 	position: absolute;
 	bottom: 0;
-	left: 0;
+	left: 50%;
+	transform: translateX(-50%);
 	background: $black;
 	@include transition(all .3s ease);
 }
@@ -150,11 +152,10 @@ h1.section-title, h2.section-title {
 }
 
 a.project {
-	margin:15px 25px;
 	color: $link_color;
 	text-decoration: none;
 	font-weight: 600;
-	padding:15px 35px;
+	padding:15px 15px;
 	position: relative;
 	@include transition(all 0.15s ease-in-out);
 }
@@ -162,10 +163,11 @@ a.project {
 a.project:before {
 	content: "";
 	width: 0px;
-	height:3px;
+	height:2px;
 	position: absolute;
 	bottom: 0;
-	left: 0;
+	left: 50%;
+	transform: translateX(-50%);
 	background: $black;
 	@include transition(all .3s ease);
 }
