@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: rgb(236, 238, 240);
+}
+.header {
+    margin: auto auto;
+    background: url('../images/parallax-bg.png') no-repeat right;
+    background-size: cover;
+    padding: 50px;
+}
+.navbar {
+    background: #262E38;
+    color: #fff;
+    padding: 20px;
+    clear: both;
+}
+.navbar a {
+    font-size:17px;
+}
+.moto {
+    font-size: 1.5em;
+    font-weight: 300;
+    float: left;
+}
+.page {
+    padding: 50px;
+}
+.announcements-header {
+    background: #2c82c9;
+    color: #fff;
+    font-family: Sans-Serif, Arial, "Open Sans";
+    padding: 1.2em 1.425em 1.1em 1.075em;
+    margin-bottom: -20px
+}
+.heading {
+    font-size: 22px;
+    font-weight: 600;
+}
+.announcements-header .sub-heading {
+    font-size: 15px;
+    color: #ccc;
+    margin-top: -30px;
+    margin-left: -19px;
+    font-family: "Open Sans", sans-serif, arial;
+}
+.announcements-inner {
+    background: #fff;
+}
+.title {
+    font-size: 1.4em;
+    font-weight: 500;
+    padding: 1.1em;
+    background: #494d5d;
+    color: #fff;
+}
+.announcements p {
+    padding: 1.1em 1.3em;
+}
+a.btn-custom {
+    background: #494d5d;
+    margin-top: 10px;
+}
+a.btn-custom:hover {
+    background: #3a3d4a;
+}
+.announcement a {
+    padding: 5px;
+    text-align: center;
+}
+.inner {
+    background: #fff;
+}
+.inner .ip {
+    text-align: center;
+    font-size: 1.4em;
+    color: #222;
+    word-wrap: break-word;
+}
+.inner span {
+    text-align: center;
+    font-size: 1.1em;
+}
+.sidebar-content {
+    padding: 20px;
+    margin-top: -20px;
+    text-align: center;
+}
+.footer-wrap {
+    background: #262E38;
+}
+.footer-copyright a {
+    transition: all 0.3s ease-in-out;
+    color: #ccc;
+}
+.footer-copyright a:hover {
+    color: #eee;
+}
+
+@media only screen and (max-width: 768px) {
+    .page {
+        padding: 30px 0;
+    }
+    .moto {
+        float: right;
+        font-size: 15px;
+    }
+    .mobile {
+        float: left;
+    }
+}

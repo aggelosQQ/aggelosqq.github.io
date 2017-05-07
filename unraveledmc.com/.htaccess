@@ -1,0 +1,3 @@
+Options -Indexes
+ErrorDocument 403 "<img src='http://unraveledmc.com/images/403.png' />"
+ErrorDocument 404 "<img src='http://unraveledmc.com/images/404.png' />"
