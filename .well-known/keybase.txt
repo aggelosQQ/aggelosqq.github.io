@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/aggelosqq
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://aggelosqq.com
+  * I am aggelosqq (https://keybase.io/aggelosqq) on keybase.
+  * I have a public key with fingerprint 3EF6 441F BE47 0AFA 956C  D2A0 4F7D C9CC ACFF 5182
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01015b613946a08a7021c682f71875b29d9f48fad3c5d8ad35aede7638cb695bb2870a",
+            "fingerprint": "3ef6441fbe470afa956cd2a04f7dc9ccacff5182",
+            "host": "keybase.io",
+            "key_id": "4f7dc9ccacff5182",
+            "kid": "01015b613946a08a7021c682f71875b29d9f48fad3c5d8ad35aede7638cb695bb2870a",
+            "uid": "7028effc2b790859d1af10c311968819",
+            "username": "aggelosqq"
+        },
+        "service": {
+            "hostname": "aggelosqq.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1494922970,
+    "expire_in": 157680000,
+    "prev": "a9c03ac629d13fdb604928f96b6810b7aa4dff9c1dddb5b98df3cc114c2db0d6",
+    "seqno": 18,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.70
+Comment: https://keybase.io/crypto
+
+yMIdAnicrVJbSFRRFB0zE+1JmDlBEpc+pCzuuc9zlKTsRX00FWIPquE8Zy7q3HFm
+nDITCoKix4dBZkUUaIb0UQS9lN5CYmVYGBIWiOSHChJhIkl2rtRP9Nn52Zy911p7
+7c1un5vqy0z5uXkqo2fHaHbKq2eXqnx7ltz7WKMQl1UrBTVKGZ8OvJzxeCJY5jCl
+QFGBCkxiAR0ZFlYhtlUNUAtqwgbQNomGGBIGFJjp1GRQBhNzxm1Lh5RYyCREg7aK
+lXxFOJEQj0VjTiQhZXUuLMMAgnBDlgVGpkWZhlVD2IwiSjEVwgRQk8SwG/cY0hzB
+cb7acWVOfoLT9v6B/8++q6blJB1yIahGbKRCEzGABVCpDgCyIATIA8Z5LIIruETj
+UIiXu/HKSqU2X5HppEO5t1lvlL8hq6lbIdnRmJtwqVsuS+FEIhov8KiJ6qiHPchJ
+8LdKkDgRJjcpGUkeiztuRCkAEkkTjicLDGQgTUO2mq/wQ1EnxoOOhzBtC6ryeX14
+0muPqKpjask9AF0wYqmSBwWyiAWBSmyMDSYEooAxRkyCIBM6pQAYVGNEZZbizVUZ
+caU2lD5xSGrGnVAEJ6piXKl9/nTfTF9Kpm9W2gzvxHyZGQv+HF59UfrUtrev8t7d
+qB/yv1k54Dx63bK+MXz7tC9jy2jOg8vJ7aCme+0qNvHtE2gqKdFvNp4bC6YFSjcW
+G1nr2MDXiR9uczhw7FZD93rYO2fNiltDL8LNxSdbOhZ3LljaEDhRMftzp9h55Mm2
+6g/XqpK9gdKGwsfdu9rHK3OdkSXXF+U15w4cz0qFI52Das6mlc7d1km35+LGvmjS
+XJjnf9nVdOf57qwv/q79ha1Xt/uXldAN49097pX6Ov/rsxuODgbM9MmO+r624uHm
+5cn84XlO2oGi7/dLY3bLirV32nL9WvnWw/OvrxvLttn77Dqt4tTDvZOptRceFFf3
+2Of5mXRG+vtvXPgFx3RDeA==
+=6htO
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/aggelosqq
+
+==================================================================
