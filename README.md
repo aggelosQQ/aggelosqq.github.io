@@ -9,6 +9,4 @@ __Get in touch with me on:__
 
 ---
 
-All the content in this repository fall under the All Rights Reserved license.
-
-aggelosQQ © 2016 - 2017. All Rights Reserved.
+aggelosQQ © 2016 - 2017. _All Rights Reserved_.
