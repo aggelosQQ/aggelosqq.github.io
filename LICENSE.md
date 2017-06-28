@@ -1,1 +1,1 @@
-All content under this repository is subjected to exclusive ownership of (insert name). You are only permitted to review the source code for personal and academic knowledge. All other activities, such as sale, redistribution, and modification, are strictly prohibited.
+All content under this repository is subjected to exclusive ownership of Aggelos Sarris. You are only permitted to review the source code for personal and academic knowledge. All other activities, such as sale, redistribution, and modification, are strictly prohibited.
