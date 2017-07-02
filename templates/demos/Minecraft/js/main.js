@@ -12,7 +12,7 @@ $(document).ready(function() {
         interval);
 
     var refresh = function() {
-        $.getJSON("http://eu.mc-api.net/v3/server/info/play.unraveledmc.com", function(json) { // Change the IP
+        $.getJSON("https://eu.mc-api.net/v3/server/info/play.unraveledmc.com", function(json) { // Change the IP
             if (json.online !== true) {
                 $("#online").html('Server Offline');
             } else {
