@@ -10,6 +10,13 @@ $teal: #009688;
 $gray: #ccc;
 $light_blue: #0091EA;
 
+
+/* SOCIAL ICONS */
+$facebook_color: #3b5998;
+$twitter_color: #00aced;
+$instagram_unhovered_color: #D92E7F;
+$instagram_hovered_color: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);;
+
 * {
 	margin: 0; padding: 0;
 }
@@ -21,6 +28,7 @@ a {
 
 body {
 	font-family: 'Raleway', sans-serif;
+	// overflow-x: hidden;
 }
 .page-brand {
 	float: left;
@@ -258,10 +266,17 @@ a.email {
 		transform: translateY(-50%);
 	}
 }
-.footer {
+section.footer {
 	text-align: center;
-	padding:25px;
-	margin-top:85px;
+	padding:20px 0 20px 0;
+	margin:0 85px 0 0;
+	width: 100%;
+	background: #222;
+	color: #fff;
+	.social-icons {
+		text-align: center;
+		margin-top: 15px;
+	}
 }
 
 
@@ -272,56 +287,76 @@ a.email {
 	display: inline-block;
 }
 
-.twitter-icon {
+.icon {
 	padding: 10px;
-	color: #00aced;
-	border: 2px solid #00aced;
+	width: 29.719px;
+	height: 32px;
 	border-radius: 100%;
 	z-index: 999;
-	widows: 29.719px;
-	height: 32px;
+	margin-right: 5px;
+	@include transition(all .4s ease-in-out);
+	
+}
+
+.twitter-icon {
+	color: $twitter_color;
+	border: 2px solid$twitter_color;
 	@include transition(all .4s ease-in-out);
 
 	&:hover {
-		background: #00aced;
+		background: $twitter_color;
 		color: #fff;
 	}
 }
+
 
 
 
 .facebook-icon {
-	padding: 10px;
-	color: 	#3b5998;
-	width: 29.719px;
-	height: 32px;
-	border: 2px solid #3b5998;
-	border-radius: 100%;
-	z-index: 999;
-	@include transition(all .4s ease-in-out);
+	color: $facebook_color;
+	border: 2px solid $facebook_color;
 	&:hover {
-		background: #3b5998;
+		background: $facebook_color;
 		color: #fff;
 	}
 }
 
-
 .instagram-icon {
-	padding: 10px;
-	color: 	#D92E7F;
-	width: 29.719px;
-	height: 32px;
-	border: 2px solid #D92E7F;
-	border-radius: 100%;
-	z-index: 999;
+	color: $instagram_unhovered_color;
+	border: 2px solid $instagram_unhovered_color;
 	@include transition(all .4s ease-in-out);
 	&:hover {
-		background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+		background: $instagram_hovered_color;
 		color: #eee;
 		border: none;
 	}
 }
 
+
+.github-icon {
+	color: #999;
+	border: 2px solid #999;
+	@include transition(all .4s ease-in-out);
+	&:hover {
+		background: #333;
+		border: 2px solid #333;
+		color: #eee;
+
+	}
+}
+
+.codepen-icon {
+	color: #666;
+	border: 2px solid #666;
+	padding-right: 12px;
+	@include transition(all .4s ease-in-out);
+	&:hover {
+		background: #000;
+		border: 2px solid #000;
+		color: #fff;
+
+	}
+}
 
 .thumbnail-image {
 	width: 200px;
@@ -376,14 +411,63 @@ a.email {
 	}
 }
 
+.testimonials {
+	background: #eee url('../images/testimonials/testimonials-bg.jpeg') no-repeat fixed center center;
+	background-size: cover;
+	min-height: 400px;
+	margin:0;
+	width: 100%; 
+	.testimonials-inner {
+		background: rgba(#fff,0.9);
+		min-height: 400px;
+		padding:30px;
+		
+		.section-title {
+			margin-bottom: 70px
+		}
 
-.hide-on-mobile { display: block; }
-.hide-on-mobile-inline { display: inline-block; }
-.show-on-mobile { display: none; }
-@media only screen and (max-width: 768px) {
-	.hide-on-mobile { display: none; }
-	.hide-on-mobile-inline { display: none; }
-	.show-on-mobile { display: block; }
+		.card {
+			width: 70%;
+			margin: 0 auto;
+			padding: 10px;
+			// margin-top: 150px;
+			.avatar {
+				width: 200px;
+				height: 200px;
+				float: left;
+				margin-right: 30px;
+				border-radius: 100%;
+			}
+			p.feedback {
+				font-family: 'Open Sans', sans-serif;
+				font-size: 1.2em;
+				font-style: italic;
+				font-weight: 100;
+				color: #787D85;
+				min-height: 200px;
+			}
+
+			p.author {
+				color: #222;
+				font-style: italic;
+				margin-right: 15px;
+				border: 2px solid #222;
+				display: inline-block;
+				padding: 5px 15px;
+				margin-top: 10px;
+				float: right;
+			}
+		}
+	}
+}
+
+.hide-on-mobile { display: block !important; }
+.hide-on-mobile-inline { display: inline-block !important; }
+.show-on-mobile { display: none !important; }
+@media all and (max-width: 768px) {
+	.hide-on-mobile { display: none !important; }
+	.hide-on-mobile-inline { display: none !important; }
+	.show-on-mobile { display: block !important; }
 
 	.menu {
 		float: right;
@@ -425,6 +509,21 @@ a.email {
 		width: 100%;
 		height: 300px;
 		margin: 5px 0;
+	}
+	.testimonials {
+		.testimonials-inner {
+			 .card {
+			 	width: 100%;
+	 			p.feedback {
+					font-family: 'Open Sans', sans-serif;
+					font-size: 1.1em;
+					min-height: 300px;
+				}
+				p.author {
+					margin-top: 10px;
+				}
+			}
+		}
 	}
 }
 

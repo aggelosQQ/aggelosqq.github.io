@@ -15,6 +15,19 @@ $(document).ready(function() {
         }, 1000);
     });
 
+    $("#testimonials").click(function (){
+        $('html, body').animate({
+            scrollTop: $(".testimonials").offset().top
+        }, 1000);
+    });
+
+      $('.card-outer').slick({
+          dots: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          adaptiveHeight: true
+      });
 
 
 });
