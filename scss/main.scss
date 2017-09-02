@@ -39,6 +39,8 @@ body {
 
 nav.nav {
 	padding: 25px;
+	transition-duration: 0.8s;
+	-webkit-transition-duration: 0.8s;
 	ul.navbar > li {
 		display: inline-block;
 		a {
@@ -85,6 +87,8 @@ nav.nav ul.navbar > li a:hover:before, nav.nav ul.navbar > li a:active:before {
 }
 ul.navbar {
 	text-align: right;
+	-webkit-transition-duration: 0.8s;
+	transition-duration: 0.8s;
 }
 
 .profile {
@@ -127,7 +131,7 @@ ul.navbar {
 		justify-content: center;
 		padding: 15px;
 		figure {
-			padding:25px;
+			// padding:25px;
 			margin: 0 25px 25px 25px;
 			h2 {
 				margin-bottom:5px;
@@ -163,7 +167,7 @@ a.project {
 	color: $link_color;
 	text-decoration: none;
 	font-weight: 600;
-	padding:15px 15px;
+	padding:15px;
 	position: relative;
 	@include transition(all 0.15s ease-in-out);
 }
@@ -444,13 +448,15 @@ section.footer {
 				font-style: italic;
 				font-weight: 100;
 				color: #787D85;
-				min-height: 200px;
+				text-align: left;
+				margin-top: 50px;
+				// min-height: 200px;
 			}
 
 			p.author {
 				color: #222;
 				font-style: italic;
-				margin-right: 15px;
+				margin-right: 50px;
 				border: 2px solid #222;
 				display: inline-block;
 				padding: 5px 15px;
@@ -464,7 +470,7 @@ section.footer {
 .hide-on-mobile { display: block !important; }
 .hide-on-mobile-inline { display: inline-block !important; }
 .show-on-mobile { display: none !important; }
-@media all and (max-width: 768px) {
+@media all and (max-width: 900px) {
 	.hide-on-mobile { display: none !important; }
 	.hide-on-mobile-inline { display: none !important; }
 	.show-on-mobile { display: block !important; }
@@ -472,7 +478,38 @@ section.footer {
 	.menu {
 		float: right;
 		font-size:2em;
+		transition: all .3s ease-in-out;
+		cursor: pointer;
+		border: 2px dashed transparent;
+		&:hover {
+			border: 2px dashed #222;
+		} 
 	}
+
+	
+	.skills {
+		margin: 50px 0;
+		width:100%;
+		.skills-inner {
+			h2 {
+				font-size: 1.3em;
+			}
+			svg {
+				width: 70px;
+			}
+		}
+	}
+
+	.projects-list {
+		margin: 0;
+		width: 100%;
+		
+		a {
+			font-size: 1em;
+			padding: 10px;
+		}
+	}
+
 	nav a { display: block; }
 	.navbar-visible {
 		display: block;
@@ -499,10 +536,12 @@ section.footer {
 	section {
 		width: 99%;
 		margin: 0 auto;
-	}
 
-	.special {
-		
+		.section-title, .hire h1.title {
+			margin: 0;
+			width: 100%;
+			background: #222;
+		}
 	}
 
 	.thumbnail-image {
@@ -517,10 +556,15 @@ section.footer {
 	 			p.feedback {
 					font-family: 'Open Sans', sans-serif;
 					font-size: 1.1em;
-					min-height: 300px;
+					min-height: 250px;
+					text-align: center;
 				}
 				p.author {
 					margin-top: 10px;
+					text-align: center;
+					display: block;
+					float: none;
+					margin-right: 0;
 				}
 			}
 		}
