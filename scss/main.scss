@@ -448,9 +448,9 @@ section.footer {
 				font-style: italic;
 				font-weight: 100;
 				color: #787D85;
-				text-align: left;
+				// text-align: left;
 				margin-top: 50px;
-				// min-height: 200px;
+				min-height: 100px;
 			}
 
 			p.author {
@@ -462,6 +462,16 @@ section.footer {
 				padding: 5px 15px;
 				margin-top: 10px;
 				float: right;
+				a {
+					padding-bottom: 0;
+					border-bottom: 2px solid #222;
+					transition: all .3s ease-in-out;
+					&:hover {
+						color: #444;
+						border-bottom: 2px solid #444;
+						padding-bottom: .5px;
+					}
+				}
 			}
 		}
 	}
