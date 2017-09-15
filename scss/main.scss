@@ -34,6 +34,17 @@ body {
 	float: left;
 	transform: translateX(-400px);
 	font-weight: 500;
+	img {
+		width: 50px;
+		float: left;
+		user-select: none;
+	}
+	p {
+		display: inline-block;
+		margin-top: 7px;
+		user-select: none;
+		margin-left:6px;
+	}
 }
 
 
@@ -96,8 +107,6 @@ ul.navbar {
 	margin-top:45px;
 	img {
 		width: 250px;
-		border-radius: 150px;
-		border: 3px solid $gray;
 	}
 	.name {
 		margin-top:15px;
@@ -477,6 +486,7 @@ section.footer {
 	}
 }
 
+
 .hide-on-mobile { display: block !important; }
 .hide-on-mobile-inline { display: inline-block !important; }
 .show-on-mobile { display: none !important; }
@@ -566,6 +576,7 @@ section.footer {
 					font-family: 'Open Sans', sans-serif;
 					font-size: 1.1em;
 					min-height: 250px;
+					margin-top: 0;
 					text-align: center;
 				}
 				p.author {
