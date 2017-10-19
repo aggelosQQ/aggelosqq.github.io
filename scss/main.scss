@@ -30,6 +30,13 @@ body {
 	font-family: 'Raleway', sans-serif;
 	// overflow-x: hidden;
 }
+
+.header {
+	// background: url('../images/header.png') no-repeat center;
+	// background-size: cover ;
+	// height: 100vh;
+}
+
 .page-brand {
 	float: left;
 	transform: translateX(-400px);
@@ -436,7 +443,7 @@ section.footer {
 		padding:30px;
 		
 		.section-title {
-			margin-bottom: 70px
+			margin-bottom: 30px
 		}
 
 		.card {
