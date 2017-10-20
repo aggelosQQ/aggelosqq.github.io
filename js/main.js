@@ -5,8 +5,8 @@ $(document).ready(function() {
 		x: '0',
 	});
 	$('.menu').click(function() {
-		$('.navbar').toggleClass('navbar-visible', 1000);
-		$('.navbar').toggleClass('hide-on-mobile', 1000);
+		$('.navbar').toggleClass('navbar-visible');
+		$('.navbar').toggleClass('hide-on-mobile');
 	});
 
     $("#work").click(function (){
