@@ -32,15 +32,58 @@ body {
 }
 
 .header {
-	// background: url('../images/header.png') no-repeat center;
-	// background-size: cover ;
-	// height: 100vh;
+	background: url('../images/header.jpeg') no-repeat fixed top;
+	background-size: cover;
+	height: 80vh;
+	z-index: -1;
+}
+
+.header-inner {
+	color: $white;
+	background: rgba(0,0,0,0.6);
+	height: 100%;
+}
+
+.small-header {
+	height: 20vh;
+	text-align: center;
+
+}
+
+.small-header-photography {
+	background:transparent url('../images/photography.jpeg')  no-repeat fixed bottom ;
+	background-size: cover;
+}
+
+.small-header-about {
+	background:transparent url('../images/about.jpeg') no-repeat fixed bottom center;
+	background-size: cover;
+}
+
+.small-header-business {
+	background:transparent url('../images/business.jpeg') no-repeat fixed bottom;
+	background-size: cover;
+}
+
+.small-header-inner {
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+	color: $white;
+
+	h3 {
+		font-size: 2em;
+		text-transform: uppercase;
+		margin-top: 15px;
+	}
 }
 
 .page-brand {
 	float: left;
 	transform: translateX(-400px);
 	font-weight: 500;
+	a {
+		color: $darker_white;
+	}
 	img {
 		width: 50px;
 		float: left;
@@ -69,6 +112,7 @@ nav.nav {
 			padding:10px 15px;
 			position: relative;
 			font-weight: 500;
+			color: $darker_white;
 		}
 	}
 }
@@ -97,7 +141,7 @@ nav.nav ul.navbar > li a:before {
 	bottom: 0;
 	left: 50%;
 	transform: translateX(-50%);
-	background: $black;
+	background: $white;
 	@include transition(all .5s ease);
 }
 nav.nav ul.navbar > li a:hover:before, nav.nav ul.navbar > li a:active:before {
@@ -111,23 +155,26 @@ ul.navbar {
 
 .profile {
 	text-align: center;
-	margin-top:45px;
-	img {
-		width: 250px;
-	}
+	margin-top: 10%;
 	.name {
 		margin-top:15px;
-		font-size: 2em;
+		font-size: 3em;
 		font-weight: 500;
+		border-bottom: 2px solid #eee;
+		border-top: 2px solid #eee;
+		display: inline-block;
+		padding: 25px 45px;
 	}
 	.subtitle {
-		font-size: 1em;
+		font-size: 1.1em;
 		font-weight: 400;
 		text-transform: uppercase;
-		margin-top:5px;
+		margin-top:25px;
 		letter-spacing: 0.1em;
 	}
 }
+
+
 
 .section {
 	width: 65%;
@@ -228,25 +275,105 @@ input, textarea {
 	margin:10px;
 	font-size: 1.2em;
 	resize: vertical;
+	font-family: 'Raleway', sans-serif;
 	position: relative;
 	@include transition(all .3s ease-in-out);
 	&:focus {
-		border-bottom: 3px solid $light_blue;
+		border-bottom: 2px solid;
 	}
 }
+
+textarea {
+	font-size: .95em;
+}
+.recommended {
+	width: 60%;
+	margin: 0 auto;
+	margin-bottom: 75px;
+	border: 2px solid #333;
+	padding: 30px;
+	text-align: left;
+	h1 {
+		text-align: left;
+		text-transform: uppercase;
+		font-weight: 900;
+		margin-top: -45px;
+		background: #fff;
+		display: inline-block;
+		position: relative;
+		padding: 0 15px;
+	}
+
+	hr {
+		margin: 15px 0;
+		width: 100%;
+	}
+	button {
+		outline: none;
+		border: none;
+		cursor: pointer;
+		width: 100%;
+		display: block;
+	}
+	.recommended-inner {
+		h2 {
+			font-weight: 400;
+		}
+		p {
+			padding: 15px;
+			text-align: justify;
+		}
+		
+		.btn {
+			padding: 10px 25px;
+			display: inline-block;
+			border-radius: 2px;
+			font-size: .85em;
+			text-transform: uppercase;
+			font-weight: 700;
+		}
+		.btn-blue {
+			background: #1E88E5;
+			color: $white;
+			@include transition(all .3s ease-in-out);
+			&:hover {
+				background: darken(#1E88E5, 5%);
+			}
+		}
+		.btn-red {
+			background:#F44336;
+			color: $white;
+			@include transition(all .3s ease-in-out);
+			&:hover {
+				background: darken(#F44336, 5%);
+			}
+		}
+		.btn-teal {
+			background:$teal;
+			color: $white;
+			@include transition(all .3s ease-in-out);
+			&:hover {
+				background: darken($teal, 5%);
+			}
+		}
+	}
+}
+
 
 input[type=submit] {
 	outline: none;
 	border: none;
-	border-bottom: 2px solid $black_lighter;
-	width:20%;
-	float: right;
-	background: $white;
-	font-weight: 200;
+	width:100%;
+	background: $teal;
+	color: #fff;
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: 700;
 	@include transition(all .3s ease-in-out);
 	position: relative;
 	cursor: pointer;
 	&:hover {
+		background: darken($teal, 5%);
 	}
 }
 input[type=submit]:after {
@@ -392,7 +519,10 @@ section.footer {
 
 .instagram-check {
 	margin-top: 40px;
+}
 
+.typed-cursor {
+	display: none;
 }
 
 .help {

@@ -1,0 +1,28 @@
+{
+  "name": "aggelosqq.github.io",
+  "version": "2.0.0",
+  "description": "Personal website of Aggelos Sarris",
+  "main": "index.js",
+  "dependencies": {
+    "typed.js": "^2.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aggelosQQ/aggelosqq.github.io.git"
+  },
+  "keywords": [
+    "aggelos",
+    "sarris",
+    "aggelosqq"
+  ],
+  "author": "Aggelos Sarris",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/aggelosQQ/aggelosqq.github.io/issues"
+  },
+  "homepage": "https://github.com/aggelosQQ/aggelosqq.github.io#readme"
+}

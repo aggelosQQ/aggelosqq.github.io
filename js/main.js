@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
 	$('body').hide().fadeIn('slow');
 	$('.page-brand').transition({
 		x: '0',
@@ -27,6 +28,8 @@ $(document).ready(function() {
           slidesToShow: 1,
           adaptiveHeight: true
       });
+
+
 
 
 });

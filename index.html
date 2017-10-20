@@ -25,24 +25,30 @@
 </head>
 <body>
 	<div class="header">
-	<nav class="nav">
-		<h2 class="page-brand" id="top"><a href="index.html">Aggelos Sarris</a></h2>
-		<i class="fa fa-bars fa-fw menu show-on-mobile"></i>
-		<ul class="navbar hide-on-mobile">
-			<li><a href="index.html" id="top">Home</a></li>
-			<li><a href="#" id="work">Work</a></li>
-			<li><a href="#" id="testimonials">Testimonials</a></li>
-			<li><a href="about" id="about">About</a></li>
-			<li><a href="photography" id="photography">Photography</a></li>
-			<!-- <li><a href="contact.php">Contact</a></li> -->
-			<li><a href="business/" class="special" id="special">Business Inquiries</a></li>
-		</ul>
-	</nav>
+		<div class="header-inner">
+			<nav class="nav">
+				<h2 class="page-brand" id="top"><a href="index.html">Aggelos Sarris</a></h2>
+				<i class="fa fa-bars fa-fw menu show-on-mobile"></i>
+				<ul class="navbar hide-on-mobile">
+					<li><a href="index.html" id="top">Home</a></li>
+					<li><a href="#" id="work">Portfolio</a></li>
+					<li><a href="#" id="testimonials">Testimonials</a></li>
+					<li><a href="about" id="about">About</a></li>
+					<li><a href="photography" id="photography">Photography</a></li>
+					<!-- <li><a href="contact.php">Contact</a></li> -->
+					<li><a href="business/" class="special" id="special">Business Inquiries</a></li>
+				</ul>
+			</nav>
+	
+	
 
-	<section class="profile">
-		<h3 class="name">Aggelos Sarris</h3>
-		<p class="subtitle">Front End Website Developer & Designer</p>
-	</section>
+
+
+		<section class="profile">
+			<h3 class="name">Aggelos Sarris</h3>
+			<p class="subtitle"></p>
+		</section>	
+	</div>
 	</div>
 	<section class="skills section">
 		<h1 class="section-title">Capabilities</h1>
@@ -210,6 +216,19 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="js/jquery-transit.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="js/typed.min.js"></script>
 	<script src="js/main.js"></script>
+	
+
+	<script>
+				
+		var typed = new Typed('.subtitle', {
+		  strings: ["I am a Front-end Developer", "I am a Website Designer", "I am a UI Deveoper", "I am a Front-end Developer"],
+		  typeSpeed: 70,
+		  backDelay: 700,
+		  backSpeed: 40,
+		  smartBackspace: true
+		});
+	</script>
 </body>
 </html>
