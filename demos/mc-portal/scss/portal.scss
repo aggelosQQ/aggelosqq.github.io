@@ -1,0 +1,101 @@
+* {
+      margin: 0;
+      padding: 0;
+}
+
+body {
+      background: url("../img/bg.jpg") fixed center no-repeat;
+      background-size: cover;
+      font-family: 'Biryani', sans-serif;
+}
+
+.wrapper {
+      text-align: center;
+}
+
+.logo {
+      margin-top: 120px;
+      -webkit-animation-name: scalable;
+      animation-name: scalable;
+      -webkit-animation-duration: 2s;
+      animation-duration: 2s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+      -webkit-animation-direction: alternate;
+      animation-direction: alternate;
+}
+@keyframes scalable {
+      from {
+            transform: scale(1,1);
+      }
+
+      to {
+            transform: scale(1.05,1.05);
+      }
+}
+
+.portal {
+      text-align: center;
+      margin-top: 200px;
+      margin-left: -25px;
+
+      a {
+            color: #fff;
+            margin-left: 60px;
+            margin-bottom: 30px;
+
+            .portal-link {
+                  vertical-align: top;
+                  display: inline-block;
+                  transition: all 0.3s ease-in-out;
+
+                  &:hover {
+                        transform: scale(1.1,1.1);
+                  }
+
+                  span {
+                        color: #fff;
+                        text-align: center;
+                        display: block;
+                        font-weight: 200;
+                        text-transform: uppercase;
+                        font-family: 'Biryani', sans-serif;
+                        margin-top: 20px;
+                  }
+
+                  img {}
+            }
+      }
+}
+
+.status {
+      color: #fff;
+      margin-top: 100px;
+      margin-bottom: -65px;
+      display: inline-block;
+      padding: 10px 15px;
+      background: rgba(100,100,100,0.4);
+      border-radius: 5px;
+      text-transform: uppercase;
+      font-size: 1em;
+}
+
+
+@media screen and (max-width: 555px) {
+      .logo {
+            margin-top: 30px;
+      }
+      .portal {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 50px;
+            a {
+                  .portal-link {
+
+                  }
+            }
+      }
+}
