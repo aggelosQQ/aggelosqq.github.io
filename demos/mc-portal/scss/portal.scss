@@ -82,6 +82,27 @@ body {
       font-size: 1em;
 }
 
+a {
+      color: #fff;
+      text-transform: uppercase;
+      &:hover {
+            color: #fff;
+
+      }
+      .purchase {
+            background: #E91E63;
+            padding: 8px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            opacity: 0.4;
+            transition: .3s all ease-in-out;
+
+            &:hover {
+                  opacity: 1;
+            }
+      }
+}
 
 @media screen and (max-width: 555px) {
       .logo {
