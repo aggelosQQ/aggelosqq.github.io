@@ -32,7 +32,7 @@ body {
 }
 
 .header {
-	background: url('../images/header.jpeg') no-repeat fixed top;
+	background: url('../images/header.jpg') no-repeat fixed top;
 	background-size: cover;
 	height: 80vh;
 	z-index: -1;
@@ -328,7 +328,7 @@ textarea {
 			padding: 15px;
 			text-align: justify;
 		}
-		
+
 		.btn {
 			padding: 10px 25px;
 			display: inline-block;
@@ -447,7 +447,7 @@ section.footer {
 	z-index: 999;
 	margin-right: 5px;
 	@include transition(all .4s ease-in-out);
-	
+
 }
 
 .twitter-icon {
@@ -571,12 +571,12 @@ section.footer {
 	background-size: cover;
 	min-height: 400px;
 	margin:0;
-	width: 100%; 
+	width: 100%;
 	.testimonials-inner {
 		background: rgba(#fff,0.9);
 		min-height: 400px;
 		padding:30px;
-		
+
 		.section-title {
 			margin-bottom: 30px
 		}
@@ -645,10 +645,10 @@ section.footer {
 		border: 2px dashed transparent;
 		&:hover {
 			border: 2px dashed #222;
-		} 
+		}
 	}
 
-	
+
 	.skills {
 		margin: 50px 0;
 		width:100%;
@@ -665,13 +665,13 @@ section.footer {
 	.projects-list {
 		margin: 0;
 		width: 100%;
-		
+
 		a {
 			font-size: 1em;
 			padding: 10px;
 		}
 	}
-	
+
 	nav a { display: block; }
 	.navbar-visible {
 		position: absolute;
@@ -702,7 +702,7 @@ section.footer {
 		@include transition(all .3s ease-in-out);
 		color: #222;
 	}
-	
+
 	section {
 		width: 99%;
 		margin: 0 auto;
@@ -739,7 +739,7 @@ section.footer {
 			}
 		}
 	}
-	
+
 	.about {
 		width: 95%;
 		line-height: 26px;
@@ -749,8 +749,8 @@ section.footer {
 			margin-bottom: 25px;
 		}
 	}
-	
-	.small-header { 
+
+	.small-header {
 		height: 30vh;
 
 		.small-header-inner {
@@ -763,7 +763,7 @@ section.footer {
 	.recommended {
 		width: 100%;
 		padding: 10px;
-		
+
 		h1 {
 			padding: 0;
 			text-align: center;
@@ -792,4 +792,3 @@ section.footer {
 		width: 90%;
 	}
 }
-
