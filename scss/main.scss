@@ -708,6 +708,23 @@ section.footer {
 	}
 }
 
+.discord {
+	.discord-inner {
+		.left {
+			float: left;
+			width:60%;
+			text-align: justify;
+			font-family: 'Roboto', sans-serif;
+
+			li {
+				list-style: circle;
+				margin-left: 35px;
+				margin-top: 2px;
+				font-size: .95em;
+			}
+		}
+	}
+}
 
 .hide-on-mobile { display: block !important; }
 .hide-on-mobile-inline { display: inline-block !important; }
@@ -803,7 +820,7 @@ section.footer {
 			 .card {
 			 	width: 100%;
 	 			p.feedback {
-					font-family: 'Open Sans', sans-serif;
+					font-family: 'Roboto', sans-serif;
 					font-size: 1.1em;
 					min-height: 250px;
 					margin-top: 0;
@@ -870,5 +887,33 @@ section.footer {
 
 	input[type=submit] {
 		width: 90%;
+	}
+
+
+}
+
+@media all and (max-width: 1380px) {
+	.discord {
+		.discord-inner {
+			.left {
+				float: none;
+				width: 100%;
+				margin-top: 25px;
+				padding-bottom: 15px;
+				margin-bottom: 15px;
+
+				li {
+					margin-left: 0;
+					list-style: none;
+					padding: 7px 0px;
+					font-size: .9em;
+					border-bottom: 1px solid #ccc;
+				}
+
+				li:last-child {
+					border-bottom: none;
+				}
+			}
+		}
 	}
 }
