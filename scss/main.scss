@@ -225,36 +225,116 @@ h1.section-title, h2.section-title {
 	position: relative;
 }
 
+.projects {
+	width: 100%!important;
+}
 .projects-list {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	// width: 100%;
+	margin-left: 0;
+	margin-right: 0;
 }
 
-a.project {
+.project {
 	color: $link_color;
 	text-decoration: none;
 	font-weight: 600;
-	padding:15px;
 	position: relative;
+	border-radius: 2%;
 	@include transition(all 0.8s ease-in-out);
 }
 
-a.project:before {
-	content: "";
-	width: 0px;
-	height:2px;
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	background: $black;
-	@include transition(all .5s ease);
-}
-a.project:hover:before {
-	width: 100%;
-}
+// .project:before {
+// 	content: "";
+// 	width: 0px;
+// 	height:2px;
+// 	position: absolute;
+// 	bottom: 0;
+// 	left: 50%;
+// 	transform: translateX(-50%);
+// 	background: $black;
+// 	@include transition(all .5s ease);
+// }
+// .project:hover:before {
+// 	width: 100%;
+// }
 
+.project {
+	margin: 10px;
+	.project-img {
+		width: 400px;
+		height: 302.094px!important;
+		position: relative;
+		border-radius: 2%;
+		box-shadow: 0 4px 7px rgba(#222,.5);
+		@include transition(all .3s ease-in-out);
+
+		&:hover {
+
+		}
+	}
+
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 15;
+		border-radius: 2%;
+		background: rgba(#111, .8);
+		opacity: 0;
+		@include transition(all .3s ease-in-out);
+	}
+	.project-name {
+		position: absolute;
+		top: 40px;
+		left: 50%;
+		transform: translateX(-50%) scale(1.2);
+		opacity: 0;
+		color: #fff;
+		z-index: 16;
+		font-size: 1.1em;
+		font-weight: 400;
+		text-transform: uppercase;
+		@include transition(all .5s ease-in-out);
+	}
+	.project-description {
+		font-size: .7em;
+		color: #ccc;
+		font-weight: 300;
+		text-transform: none;
+	}
+
+	.buttons {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: #fff;
+		z-index: 16;
+		opacity: 0;
+		@include transition(all .5s ease-in-out);
+
+		a {
+			 color: #bbb;
+			 @include transition(all .3s ease-in-out);
+			 &:hover {
+				 color: #fff;
+			 }
+		}
+
+		i {
+			font-size: 3em;
+			margin: 15px;
+		}
+	}
+	&:hover .project-name, &:hover .overlay, &:hover .buttons {
+		opacity: 1;
+	}
+}
 
 .findme-inner h1 {
 	margin-bottom:25px;
