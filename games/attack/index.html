@@ -12,16 +12,16 @@
         <div class="small-6 columns">
             <h1 class="text-center">YOU <small>(wins: {{ playerWins }})</small></h1>
             <div class="healthbar">
-                <div class="healthbar text-center" style="background-color: green; margin: 0; color: white;" :style="{width: playerHealth + '%'}">
-                  {{ playerHealth }}
+                <div class="healthbar text-center" style="margin: 0; color: white;" :style="{width: playerHealth + '%'}" :class="{ dying: playerHealth<=20, almost: playerHealth<=50&&playerHealth>=21, full: playerHealth>50 }">
+                  <p>{{ playerHealth }}</p>
                 </div>
             </div>
         </div>
         <div class="small-6 columns">
             <h1 class="text-center">MONSTER <small>(wins: {{ monsterWins }})</small></h1>
             <div class="healthbar">
-                <div class="healthbar text-center" style="background-color: green; margin: 0; color: white;" :style="{width: monsterHealth + '%'}">
-                  {{ monsterHealth }}
+                <div class="healthbar text-center" style="margin: 0; color: white;" :style="{width: monsterHealth + '%'}" :class="{ dying: playerHealth<=20, almost: playerHealth<=50&&playerHealth>=21, full: playerHealth>50 }">
+                  <p>{{ monsterHealth }}</p>
                 </div>
 
             </div>

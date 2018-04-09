@@ -56,6 +56,27 @@ button {
     margin: 10px;
 }
 
+.healthbar {
+  transition: all ease-in-out .3s;
+}
+
+.healthbar p {
+  padding: 7px;
+}
+
+.full {
+  background: green;
+}
+
+.dying {
+  background: red;
+}
+
+.almost {
+  background: orange;
+}
+
+
 #start-game {
     background-color: #aaffb0;
 }

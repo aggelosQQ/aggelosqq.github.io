@@ -7,7 +7,10 @@ new Vue({
     turns: [],
     coins: 100,
     playerWins: 0,
-    monsterWins: 0
+    monsterWins: 0,
+    fullLife: true,
+    isDying: false,
+    almostDead: false
   },
   methods: {
     startGame: function() {
@@ -96,7 +99,7 @@ new Vue({
       this.checkWin();
     },
     calcDamage: function(min, max) {
-      return Math.floor((Math.random() * max), min);
+      return Math.floor((Math.random() * max) + 1, min);
     },
 
     checkWin: function() {
@@ -123,6 +126,27 @@ new Vue({
         return true;
       }
       return false;
+    },
+    checkPHealth: function() {
+      if (this.playerHealth <= 50) {
+        this.almost = true;
+        this.full = false;
+      } else {
+        this.almost = false;
+      }
+
+      if (this.playerHealth <= 20) {
+        this.dying = true;
+        this.almost = false;
+        this.full = false;
+      } else {
+        this.dying = false;
+      }
     }
+
+  },
+
+  computed: {
+
   }
 });
