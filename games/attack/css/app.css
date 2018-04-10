@@ -76,6 +76,17 @@ button {
   background: orange;
 }
 
+input {
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgba(30,30,30,0.5);
+  transition: all .3s ease-in-out;
+}
+
+input:focus {
+  border-bottom: 2px solid rgb(30,30,30)
+}
 
 #start-game {
     background-color: #aaffb0;

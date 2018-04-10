@@ -10,7 +10,7 @@
 <div id="app">
     <section class="row">
         <div class="small-6 columns">
-            <h1 class="text-center">YOU <small>(wins: {{ playerWins }})</small></h1>
+            <h1 class="text-center">{{ playerName }} <small>(wins: {{ playerWins }})</small></h1>
             <div class="healthbar">
                 <div class="healthbar text-center" style="margin: 0; color: white;" :style="{width: playerHealth + '%'}" :class="{ dying: playerHealth<=20, almost: playerHealth<=50&&playerHealth>=21, full: playerHealth>50 }">
                   <p>{{ playerHealth }}</p>
@@ -32,6 +32,7 @@
     </section>
     <section class="row controls" v-if="!running">
         <div class="small-12 columns">
+            <b>Enter your Name</b> <br/><input type="text" placeholder="Enter your name.." v-model="playerName" value="You"><br/>
             <button id="start-game" @click="startGame()">START NEW GAME</button>
         </div>
     </section>

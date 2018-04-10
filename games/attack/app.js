@@ -3,6 +3,7 @@ new Vue({
   data: {
     playerHealth: 100,
     monsterHealth: 100,
+    playerName: 'You',
     running: false,
     turns: [],
     coins: 100,
@@ -22,7 +23,7 @@ new Vue({
       var damage = this.calcDamage(5, 12);
       this.turns.unshift({
         isPlayer: true,
-        text: 'Player hits the monster for ' + damage
+        text: this.playerName + ' caused ' + damage + ' damage to the monster.'
       });
       this.monsterHealth -= damage;
       if (this.checkWin()) {
@@ -35,7 +36,7 @@ new Vue({
       if (this.coins >= 5) {
         this.turns.unshift({
           isPlayer: true,
-          text: 'Player used a special attack and caused ' + damage + ' to the monster (-5C)'
+          text: this.playerName + ' used a special attack and caused ' + damage + ' damage to the monster (-5C)'
         });
         this.monsterHealth -= damage;
         this.coins -= 5;
@@ -43,7 +44,7 @@ new Vue({
         if (this.coins <= 5) {
           this.turns.unshift({
             isPlayer: true,
-            text: 'You cannot afford the special attack. (5C needed)'
+            text: 'You cannot afford the special attack (5C needed)'
           });
         }
       }
@@ -58,7 +59,7 @@ new Vue({
       if (this.coins >= 3) {
         this.turns.unshift({
           isPlayer: true,
-          text: 'Player healed himself for 10. (-3C)'
+          text: this.playerName + ' got healed for 10 HP. (-3C)'
         });
         if (this.playerHealth <= 90) {
           this.playerHealth += 10;
@@ -86,13 +87,14 @@ new Vue({
         this.monsterHealth = 100;
         this.turns = [];
         this.monsterWins++;
+        this.coins -= 5;
       }
     },
     monsterAttacks: function() {
       var damage = this.calcDamage(5, 12);
       this.turns.unshift({
         isPlayer: false,
-        text: 'Monster hits the player for ' + damage
+        text: 'Monster hits ' + this.playerName + ' for ' + damage + ' damage'
       });
 
       this.playerHealth -= damage;
