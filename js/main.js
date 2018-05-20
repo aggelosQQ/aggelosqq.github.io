@@ -2,13 +2,24 @@ $(document).ready(function() {
 
 
 	$('.hire-button').click(function() {
+		let discord_invite = "4jvCAPJ"
 		swal({
-			titleText: 'Add me on Discord!',
-			text: 'aggelosQQ#7499',
-			imageUrl: 'https://discordapp.com/assets/41484d92c876f76b20c7f746221e8151.svg',
-			imageWidth: 100,
-			imageAlt: 'Discord'
+			text: 'Use the following buttons depending on your case.',
+			icon: 'info',
+			imageAlt: 'Discord',
+			buttons: ["I joined, then what?", "Join Server" ]
 		})
+		.then((joined) => {
+			if (!joined) {
+				swal({
+					title: 'The next step is..',
+					text: 'Look for a channel called "#how-to-order" and read it carefully! Everything you need to know is there.',
+					icon: "info"
+				});
+			} else {
+				window.location.replace("https://discord.gg/" + discord_invite);
+			}
+		});
 	});
 
 	$('body').hide().fadeIn('slow');

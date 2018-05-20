@@ -963,6 +963,26 @@ section.footer {
 	input[type=submit] {
 		width: 90%;
 	}
+
+	.project .project-img {
+		width: 370px;
+		height: auto!important;
+	}
+
+	.project .buttons {
+		top: 65%;
+	}
+
+	.recommended {
+		border: none;
+		margin: 0 auto 25px;
+		padding: 0;
+	}
+
+	.available, .unavailable {
+		padding: 25px;
+	}
+
 }
 
 .terms {
