@@ -3,30 +3,30 @@ $(document).ready(function() {
             'survival': {
                   'heading': 'Survival',
                   'text': 'Collect resources, build structures, battle mobs, manage hunger and explore the world. Will you thrive and survive?',
-                  'background': '../img/gamemodes/survival.png',
+                  'background': 'img/gamemodes/survival.png',
                   'readMoreLink': 'https://forum.insanemc.net/forums/survival/',
-                  'gamemodeIcon': '../img/gamemode-icons/survival-icon.png'
+                  'gamemodeIcon': 'img/gamemode-icons/survival-icon.png'
             },
             'skyblock': {
                   'heading': 'Skyblock',
                   'text': 'You are challenged to live on an isolated island in the middle of nowhere. Use your survival tactics to create blocks and make a sale to grow rich!',
-                  'background': '../img/gamemodes/skyblock.png',
+                  'background': 'img/gamemodes/skyblock.png',
                   'readMoreLink': 'https://forum.insanemc.net/forums/skyblock/',
-                  'gamemodeIcon': '../img/gamemode-icons/skyblock-icon.png'
+                  'gamemodeIcon': 'img/gamemode-icons/skyblock-icon.png'
             },
             'creative': {
                   'heading': 'Creative',
                   'text': 'Show off your creative side while designing and creating a plot. You have infinite blocks you may use and have a great time with your friends!',
-                  'background': '../img/gamemodes/factions.png',
+                  'background': 'img/gamemodes/factions.png',
                   'readMoreLink': 'https://forum.insanemc.net/forums/creative/',
-                  'gamemodeIcon': '../img/gamemode-icons/creative-icon.png'
+                  'gamemodeIcon': 'img/gamemode-icons/creative-icon.png'
             },
             'factions': {
                   'heading': 'Factions',
                   'text': 'You are challenge to defend and grow your faction. War will start as well as diplomacy so be aware! You declare war with those you choose to fight!',
-                  'background': '../img/gamemodes/factions.png',
+                  'background': 'img/gamemodes/factions.png',
                   'readMoreLink': 'https://forum.insanemc.net/forums/factions/',
-                  'gamemodeIcon': '../img/gamemode-icons/factions-icon.png'
+                  'gamemodeIcon': 'img/gamemode-icons/factions-icon.png'
             }
       }
 
