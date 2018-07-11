@@ -14,6 +14,7 @@ $twitter_color: #00aced;
 $instagram_unhovered_color: #D92E7F;
 $instagram_hovered_color: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
 
+
 * {
 	margin: 0;
 	padding: 0;
@@ -398,13 +399,16 @@ textarea {
 	margin: 0 auto 75px;
 	border: 2px solid #333;
 	padding: 30px;
-	text-align: left;
+
+	.right {
+		float: right;
+	}
 
 	h1 {
 		text-align: left;
 		text-transform: uppercase;
 		font-weight: 900;
-		margin-top: -45px;
+		margin-top: -78px;
 		background: #fff;
 		display: inline-block;
 		position: relative;
@@ -431,7 +435,6 @@ textarea {
 
 		p {
 			padding: 15px;
-			text-align: justify;
 		}
 
 		.btn {
@@ -753,6 +756,7 @@ section.footer {
 	}
 }
 
+
 .discord {
 	.discord-inner {
 		.left {
@@ -933,6 +937,7 @@ section.footer {
 	.recommended {
 		width: 100%;
 		padding: 10px;
+		overflow: auto;
 
 		h1 {
 			padding: 0;
@@ -946,9 +951,11 @@ section.footer {
 			margin-top: 5px;
 		}
 
+
 		.recommended-inner {
 			.btn {
 				display: block;
+				overflow: auto;
 				border-radius: 0;
 				text-align: center;
 			}
