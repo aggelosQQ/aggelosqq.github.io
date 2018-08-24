@@ -6,7 +6,7 @@ $(document).ready(function() {
 
     Swal({
       title: 'Join the Server:',
-      html: '<iframe src="https://ptb.discordapp.com/widget?id=447320387408232448&theme=light" width="100%" height="350" allowtransparency="true" frameborder="0"></iframe>',
+      html: '<iframe src="https://ptb.discordapp.com/widget?id=447320387408232448&theme=light" width="100%" height="350" allowtransparency="true" frameborder="0"></iframe><br>Or<br> <a href="https://discord.gg/https://discord.gg/4jvCAPJ">https://discord.gg/4jvCAPJ</a>',
       // type: 'warning',
       showCancelButton: false,
       confirmButtonText: 'Next Step...',
