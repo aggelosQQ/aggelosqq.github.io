@@ -1,0 +1,208 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Account | Sologuard</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
+  <link rel="stylesheet" href="../assets/css/flexboxgrid.min.css">
+  <link rel="stylesheet" href="../assets/css/global.css">
+  <link rel="stylesheet" href="../assets/css/index.css">
+  <link rel="stylesheet" href="css/account.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <div class="navigation">
+        <div class="logo">
+          <img src="../assets/images/logo.png" alt="Sologuard Logo" class="logo"> <span>sologuard BOT</span>
+        </div>
+        <div class="links hidden-on-mobile">
+          <a href="#!">How it Works</a>
+          <a href="#!">About</a>
+          <a href="#!">Support</a>
+          <a href="#!">Communities</a>
+
+          <div class="right">
+            <a href="#!" class="profile-dropdown"><img src="https://placehold.it/40x40" alt="User Avatar" class="avatar_small">Firstname Lastname <i class="fa fa-caret-down fa-fw"></i></a>
+          </div>
+        </div>
+
+        <div class="mobile-links shown-on-mobile">
+          <i class="fa fa-bars menu"></i>
+
+          <div class="navmob-links">
+            <a href="#!">How it Works</a>
+            <a href="#!">About</a>
+            <a href="#!">Support</a>
+            <a href="#!">Communities</a>
+            <a href="#!">Sign In</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+
+      <div class="server-list">
+        <div class="profile category">
+          <img src="https://placehold.it/60x60" alt="Profile Picture">
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="shop coming-soon category">
+          <img src="https://placehold.it/60x60" alt="Shop Link" class="disabled">
+          <img src="https://placehold.it/60x60" alt="Shop Link" class="disabled">
+
+          <span class="desc">Shops</span>
+        </div>
+
+        <div class="divider"></div>
+
+
+        <div class="discord_servers category">
+          <img src="https://placehold.it/60x60" alt="Discord Server">
+          <img src="https://placehold.it/60x60" alt="Discord Server">
+          <img src="https://placehold.it/60x60" alt="Discord Server">
+          <span class="desc">Discord Servers</span>
+        </div>
+
+
+      </div>
+      <br>
+      <hr>
+
+      <div class="server-info">
+        <div class="row">
+          <div class="col-lg-3 col-sm-12 col-md-12">
+            <div class="heading">
+              <h1>Server Name</h1>
+              <p class="vp"><span>1,625</span> VP</p>
+
+              <div class="tabs">
+                <a href="index.html">Summary</a>
+                <a href="features.html">Features</a>
+                <a href="config.html" class="selected">Configure</a>
+              </div>
+            </div>
+
+            <div class="forms">
+              <form action="">
+                <div class="row">
+                  <div class="first-col">
+
+                    <input type="email" id="contact_email" name="contact_email" value="">
+                    <label for="contact_email">Contact Email</label>
+                    <input type="text" id="contact_phone" name="contact_phone" value="">
+                    <label for="number">Contact Phone Number</label>
+                    <input type="text" id="website" name="website" value="">
+                    <label for="website">Website</label>
+                    <input type="text" id="shop_cat" name="shop_cat" value="">
+                    <label for="shop_cat">Shop Category</label>
+
+                  </div>
+                </div>
+              </form>
+
+            </div>
+          </div>
+          <div class="col-lg-9 col-sm-12 second-col overflow">
+            <div class="linking">
+              <h2>Account Linking and Forms</h2>
+              <div class="category-divider"></div>
+              <div class="linking-actions">
+                <div class="link-option">
+                  <!-- SWITCH BETWEEN ENABLED AND DISABLED BY CHANGING CLASSES "enabled", "disabled" -->
+                  <p class="enabled"><img src="images/paypal.png" alt="Paypal"></p>
+                </div>
+                <!-- <div class="link-option">
+                  <p class="disabled"><img src="images/venmo.png" alt="Venmo">
+                    <p>
+                </div> -->
+                <!-- <div class="link-option">
+                  <p class="enabled"><span>Form</span> 1099</p>
+                </div> -->
+              </div>
+            </div><br>
+
+            <div class="automaticroles">
+              <h2>Automatic Roles</h2>
+              <div class="category-divider"></div><br>
+              <div class="select-style">
+                <select name="autoaction" id="autoaction">
+                    <option value="Action">Action</option>
+                  </select>
+              </div>
+              <i class="fa fa-arrow-right arrow"></i>
+
+              <div class="select-style">
+                <select name="autoaction" id="autoaction">
+                  <option value="Give">Give</option>
+              </select>
+              </div>
+              <br><br>
+
+              <div class="select-style">
+                <select name="autoaction" id="autoaction">
+                  <option value="100 Messages">100 Messages</option>
+                </select>
+              </div>
+              <i class="fa fa-arrow-right arrow"></i>
+              <div class="select-style">
+                <select name="autoaction" id="autoaction">
+                  <option value="VIP+">VIP+</option>
+                </select><br>
+              </div>
+            </div><br>
+
+            <div class="selectableroles">
+              <h2>Announcements</h2>
+              <div class="category-divider"></div><br>
+              <div class="select-style">
+                <select name="selroles" id="selroles">
+                  <option value="Action">Action</option>
+                </select>
+              </div>
+              <i class="fa fa-arrow-down arrow"></i><br>
+              <textarea name="announcement_content" id="announcement_content" placeholder="Message"></textarea>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="footer">
+    <div class="left">
+      <a href="#!">Help</a>
+      <a href="#!">Contact</a>
+      <a href="#!">Fees</a>
+      <a href="#!">Security</a>
+      <a href="#!">About</a>
+      <a href="#!">Partners</a>
+    </div>
+
+    <div class="right">
+      <p class="copyright">
+        &copy; Sologuard 2018. All rights reserved.
+      </p>
+      <a href="#!">Legal</a>
+      <a href="#!">Privacy</a>
+      <a href="#!">Updates</a>
+    </div>
+  </div>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="../assets/js/main.js" charset="utf-8"></script>
+</body>
+
+</html>

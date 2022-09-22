@@ -1,0 +1,448 @@
+@import 'includes/variables';
+
+body {
+  // overflow-x: hidden;
+}
+
+.header {
+  width: 80%;
+  margin: 0 auto;
+  padding: 25px;
+  margin-bottom: 50px;
+  position: relative;
+
+  .navigation {
+    display: inline;
+
+    .logo {
+      width: 40px;
+      display: inline;
+      vertical-align: middle;
+      margin-right: 15px;
+
+      span {
+        font-weight: 500;
+        font-size: 1.2em;
+      }
+    }
+
+    .links {
+      display: inline;
+
+      a {
+        margin-right: 25px;
+        color: #222;
+        font-weight: 400;
+      }
+
+      a:first-child {
+        margin-left: 50px;
+      }
+
+      .right {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .header-inner {
+    margin-top: 50px;
+    margin-left: -12.5%;
+    margin-right: -12.5%;
+
+    .title {
+      font-size: 2vw;
+      color: #333;
+      // margin-top: 50px;
+      margin-bottom: -25px;
+      margin-left: 10%;
+      z-index: 1;
+      position: absolute;
+    }
+
+    .header_bg {
+      z-index: -23;
+      width: 100%;
+      margin-top: 0;
+      pointer-events: none;
+      user-select: none;
+      position: relative;
+    }
+
+    .bot-invite {
+      background: $login_bg url('../images/invite_bg.png') no-repeat top left;
+      position: absolute;
+      right: 13%;
+      top: 60%;
+      padding: 5% 8%;
+      text-align: right;
+
+      h1 {
+        font-size: 2.9em;
+        color: #fff;
+        margin-right: -100px;
+        margin-bottom: 25px;
+      }
+
+      .invite-link {
+        background: #333;
+        padding: 10px 50px;
+        display: inline-block;
+        font-size: 1.6em;
+        margin-right: -100px;
+        color: #fff;
+        border-radius: 50px;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background: #222;
+        }
+      }
+    }
+  }
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+
+  .features {
+    .feature {
+      margin: 100px;
+    }
+
+    .section_title {
+      font-size: 2.5em;
+      margin-bottom: -50px;
+      margin-top: -50px;
+      margin-left: 90px;
+    }
+
+    .feature-desc {
+      background: #eee;
+      padding: 50px;
+      height: auto;
+
+      h2 {
+        color: #333;
+        padding: 10px 0;
+      }
+
+      p {
+        letter-spacing: 0.5px;
+        line-height: 26px;
+      }
+    }
+
+    .left-desc {
+      text-align: left!important;
+    }
+
+    .right-desc {
+      text-align: right!important;
+    }
+
+    .feature-icons {
+      text-align: center;
+
+      img {
+        width: 200px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .note {
+    text-align: center;
+    padding: 50px;
+    margin-top: -50px;
+  }
+}
+
+.btn-chevron {
+  padding: 2px 15px;
+  background: #222;
+  color: #fff;
+  border-radius: 100px;
+  margin-left: 15px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: #000;
+  }
+}
+
+.footer {
+  background: #343434;
+  padding: 2% 16%;
+  color: #ccc;
+
+  .footer-column {
+    h3 {
+      color: #ddd;
+      padding: 15px 0;
+    }
+
+    a {
+      display: block;
+      color: #ccc;
+      padding: 6px 0;
+    }
+
+    .community {
+      border-bottom: 1px solid #999;
+
+      img {
+        vertical-align: middle;
+        margin-right: 30px;
+        height: 50px;
+      }
+    }
+    .community:last-child {
+      border-bottom: 1px hidden #999;
+    }
+  }
+
+  .action-footer {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+
+    .flag {
+      vertical-align: middle;
+      margin-right: 15px;
+      margin-top: -5px;
+    }
+
+    a {
+      color: #aaa;
+    }
+  }
+
+  .copyrights {
+    margin-top: 25px;
+    padding-bottom: 50px;
+
+    .white-logo {
+      text-align: center;
+
+      img {
+        margin-top: 15px;
+      }
+
+      p {
+        margin-top: 5px;
+        font-weight: bold;
+      }
+    }
+
+    .about-links {
+      margin-top: 10px;
+      text-align: center;
+
+      a {
+        display: block;
+        color: #ccc;
+        padding: 8px;
+        text-align: left;
+      }
+    }
+
+    .copyright {
+      font-size: 0.9em;
+      margin-top: 5px;
+    }
+
+    .seal {
+      margin-top: 50px;
+      text-align: center;
+    }
+  }
+}
+.shown-on-mobile {
+  display: none;
+}
+@media only screen and (max-width: 1200px) {
+  .hidden-on-mobile {
+    display: none!important;
+  }
+
+  .shown-on-mobile {
+    display: inline;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .header {
+    width: 100%;
+    background-size: cover;
+    padding: 0;
+
+    .navigation {
+      padding: 15px 30px!important;
+      display: block;
+    }
+
+    .header-inner {
+      text-align: center;
+      position: relative;
+      margin: 0!important;
+      background: url("../images/header_bg_full.jpg") no-repeat fixed center!important;
+      height: 30vh;
+      padding: 50px;
+
+      .title {
+        text-align: center;
+        font-size: 1.2em!important;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        width: 100%;
+        margin: 0!important;
+      }
+
+      .bot-invite {
+        left: 50%;
+        top: 85%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 70%;
+        background: lighten(#97905A, 10%);
+        box-shadow: 0 2px 5px rgba(#111, .6);
+
+        h1 {
+          margin: 0;
+          font-size: 1.5em;
+          padding: 0 0 15px;
+          font-weight: 400;
+        }
+
+        .invite-link {
+          margin: 0;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+
+  .content {
+    width: 90%;
+
+    .features {
+      margin-top: 170px!important;
+
+      .section_title {
+        margin: 0;
+        text-align: center;
+      }
+
+      .feature {
+        margin: 60px 10px;
+      }
+
+      .left-desc, .right-desc {
+        text-align: center!important;
+      }
+
+      .feature:first-child {
+        margin-top: 0!important;
+      }
+    }
+  }
+
+  .btn-chevron {
+    display: inline-block;
+  }
+
+  .row {
+    margin: 0!important;
+  }
+
+  .footer {
+    width: 100%;
+    padding: 0;
+    text-align: center!important;
+
+    .footer-column {
+      width: 100%;
+      margin: 0 auto;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .community {
+      border-bottom: hidden!important;
+    }
+
+    .copyrights {
+      text-align: center;
+
+      .about-links {
+        margin: 10px auto 0;
+
+        a {
+          text-align: center;
+          padding: 10px;
+          display: inline-block;
+        }
+      }
+
+      .copyright {
+        margin: 0;
+
+        p {
+          padding: 0 50px;
+        }
+      }
+
+      .white-logo {
+        display: inline-block;
+        margin: 0 auto;
+        width: 100%;
+      }
+    }
+
+    .seal {
+      margin: 20px auto 0;
+    }
+  }
+
+  .menu {
+    float: right;
+    margin-top: 12.5px;
+    font-size: 2em;
+    cursor: pointer;
+  }
+
+  .navmob-links {
+    display: none;
+    background: #eee;
+    margin-bottom: -15px;
+    margin-top: 5px;
+    margin-left: -30px;
+    margin-right: -30px;
+
+    a {
+      display: block;
+      text-align: center;
+      padding: 15px;
+      color: #222;
+      font-weight: 300;
+
+    }
+  }
+}
+
+@media only screen and (max-width: 1470px) {
+  .header .header-inner .bot-invite h1 {
+    margin-right: 0!important;
+  }
+  .header .header-inner .bot-invite .invite-link {
+    margin-right: 0!important;
+  }
+}

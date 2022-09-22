@@ -1,0 +1,14 @@
+@import 'includes/variables';
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: $global-font-family;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+}

@@ -1,0 +1,144 @@
+body {
+  background: #121212;
+  color: #eee; }
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto; }
+
+.header {
+  width: 100%;
+  padding: 25px 0 0; }
+
+.content {
+  width: 100%;
+  margin-top: 10%; }
+  .content h1 {
+    font-weight: 300;
+    font-size: 3.5em; }
+  .content p {
+    color: #ccc;
+    width: 50%;
+    padding-top: 25px;
+    font-size: 1.4em;
+    font-weight: 300;
+    letter-spacing: .5px; }
+
+.3-lines {
+  margin-top: -370px; }
+
+.doc {
+  margin-top: 5%;
+  margin-left: 20%; }
+  .doc .document {
+    background: #fff;
+    border-radius: 40px;
+    display: inline-block;
+    padding: 25px 10px;
+    width: 20%;
+    margin-left: 20px;
+    color: #111;
+    max-height: 315px;
+    height: 300px;
+    text-align: center; }
+    .doc .document img {
+      width: 80px;
+      height: 60px;
+      max-height: 80px;
+      max-height: 60px; }
+    .doc .document h3.doc-title {
+      margin-bottom: -20px;
+      font-size: 2em;
+      padding: 5px;
+      font-weight: 400; }
+    .doc .document p {
+      width: 100%;
+      color: #333;
+      font-weight: 400;
+      font-size: 1em; }
+    .doc .document .action-btn {
+      padding: 15px 50px;
+      border-radius: 50px;
+      font-size: 1.1em;
+      background: #C8BA59;
+      border-bottom: 3px solid #7E7443;
+      color: #fff;
+      margin-top: 20px;
+      display: inline-block; }
+
+.header .navigation .links a {
+  color: #fff; }
+
+.footer {
+  background: #121212;
+  padding: 5px 0;
+  overflow: auto;
+  width: 80%;
+  margin: 100px auto 0;
+  overflow: auto; }
+  .footer a {
+    font-size: .9em; }
+  .footer .left a {
+    color: #eee;
+    clear: both;
+    padding: 0px 10px;
+    font-size: .9em; }
+  .footer .right {
+    color: #eee;
+    float: right;
+    clear: both;
+    margin-top: -15px; }
+    .footer .right p {
+      display: inline;
+      font-size: .9em;
+      margin-right: 15px; }
+    .footer .right a {
+      color: #eee;
+      font-size: .9em;
+      padding-right: 5px; }
+
+@media only screen and (max-width: 1540px) {
+  .doc {
+    margin-left: 0; } }
+
+@media only screen and (max-width: 1200px) {
+  .wrapper {
+    width: 100%; }
+  .header {
+    margin: 0; }
+  .content {
+    text-align: center;
+    margin-top: 0;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; }
+  .footer {
+    position: static;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #ccc; }
+    .footer .left {
+      display: block;
+      padding: 15px; }
+    .footer .right {
+      margin: 0;
+      float: none;
+      display: inline-block;
+      padding-bottom: 25px; }
+      .footer .right p {
+        display: block;
+        padding: 15px; }
+  .content p {
+    width: 100%; }
+  .doc {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%; }
+    .doc .document {
+      display: block;
+      width: 60%;
+      margin: 15px auto;
+      padding: 25px; } }
